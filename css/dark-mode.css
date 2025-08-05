@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #3B82F6;
+    --secondary-color: #00D4FF;
+    --accent-color-1: #7B2FF7;
+    --accent-color-2: #F107A3;
+    --text-color: #E5E7EB;
+    --text-light: #9CA3AF;
+    --text-lighter: #6B7280;
+    --bg-color: #0F172A;
+    --bg-light: #1E293B;
+    --border-color: #334155;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-icon {
+    background-image: url('../images/icon-sun.svg');
+}
+
+.footer {
+    background-color: var(--bg-light);
+}
+
+.pick-card {
+    background-color: var(--bg-color);
+}
+
+.team-member img {
+    border-color: var(--bg-light);
+}
+
+.faq-question {
+    background-color: var(--bg-color);
+}

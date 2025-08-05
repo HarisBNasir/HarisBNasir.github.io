@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact ToolifyAI with your questions, suggestions, or partnership inquiries. We'd love to hear from you!">
+    <title>Contact ToolifyAI - Questions, Suggestions & Partnerships</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css" id="darkModeStyle" disabled>
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <!-- Same header as index.html -->
+    </header>
+
+    <main class="contact-page">
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p class="subtitle">Have questions, suggestions, or want to partner with us? We'd love to hear from you!</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <h2>Send Us a Message</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="general">General Inquiry</option>
+                                    <option value="suggestion">Tool Suggestion</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="advertising">Advertising</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h2>Other Ways to Reach Us</h2>
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:hello@toolifyai.tech">hello@toolifyai.tech</a></p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">💬</div>
+                            <h3>Social Media</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Twitter"><i class="icon-twitter"></i> Twitter</a>
+                                <a href="#" aria-label="Facebook"><i class="icon-facebook"></i> Facebook</a>
+                                <a href="#" aria-label="Instagram"><i class="icon-instagram"></i> Instagram</a>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">🏢</div>
+                            <h3>Business Inquiries</h3>
+                            <p><a href="mailto:partners@toolifyai.tech">partners@toolifyai.tech</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">How do you choose which tools to review?</button>
+                        <div class="faq-answer">
+                            <p>We select tools based on several factors including popularity, unique features, user requests, and potential to improve productivity. We prioritize tools that serve students, freelancers, and professionals in their work.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Can I suggest a tool for review?</button>
+                        <div class="faq-answer">
+                            <p>Absolutely! We welcome suggestions from our readers. Please use our contact form or email us at suggestions@toolifyai.tech with details about the tool you'd like us to review.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do you accept sponsored content?</button>
+                        <div class="faq-answer">
+                            <p>We may publish sponsored content, but it will always be clearly marked as such. Our reviews remain unbiased regardless of sponsorship. We maintain strict editorial independence and only recommend tools we genuinely find valuable.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How often do you update your reviews?</button>
+                        <div class="faq-answer">
+                            <p>We review our content quarterly to ensure information remains current. When tools receive significant updates, we prioritize re-evaluating them sooner. You can always check the "Last Updated" date at the top of each review.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+    <script src="../js/dark-mode.js" defer></script>
+    <script src="../js/contact-form.js" defer></script>
+</body>
+</html>
