@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive reviews of the best AI tools for productivity, creativity, and business. Expert analysis and comparisons.">
+    <title>AI Tool Reviews | ToolifyAI - Expert Analysis of Productivity Tools</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css" id="darkModeStyle" disabled>
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo-light.png" alt="ToolifyAI" class="logo-light" width="200">
+                <img src="../images/logo-dark.png" alt="ToolifyAI" class="logo-dark" width="200">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html" data-nav="home">Home</a></li>
+                    <li><a href="index.html" data-nav="reviews" class="active">Tool Reviews</a></li>
+                    <li><a href="../guides/index.html" data-nav="guides">How-To Guides</a></li>
+                    <li><a href="../students/index.html" data-nav="students">AI for Students</a></li>
+                    <li><a href="../freelancers/index.html" data-nav="freelancers">AI for Freelancers</a></li>
+                    <li><a href="../compare/index.html" data-nav="compare">Compare Tools</a></li>
+                    <li><a href="../blog.html" data-nav="blog">Blog</a></li>
+                    <li><a href="../about.html" data-nav="about">About</a></li>
+                    <li><a href="../contact.html" data-nav="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <span class="toggle-icon"></span>
+            </button>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="reviews-hero">
+            <div class="container">
+                <h1>AI Tool Reviews</h1>
+                <p class="subtitle">Expert, unbiased reviews of the best AI tools to boost your productivity and creativity</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Search for tools...">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="ad-section">
+            <div class="container">
+                <div class="ad-banner">
+                    <div class="ad-placeholder">Advertisement</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Reviews</h2>
+                    <div class="filter-controls">
+                        <div class="filter-group">
+                            <label for="category-filter">Category:</label>
+                            <select id="category-filter">
+                                <option value="all">All Categories</option>
+                                <option value="writing">Writing Assistants</option>
+                                <option value="art">AI Art Generators</option>
+                                <option value="productivity">Productivity</option>
+                                <option value="coding">Coding Assistants</option>
+                                <option value="video">Video/Audio Tools</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="sort-by">Sort By:</label>
+                            <select id="sort-by">
+                                <option value="newest">Newest First</option>
+                                <option value="rating">Highest Rated</option>
+                                <option value="popular">Most Popular</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-grid">
+                    <article class="review-card featured">
+                        <div class="review-badge">Editor's Choice</div>
+                        <div class="review-image">
+                            <img src="../images/tools/chatgpt.jpg" alt="ChatGPT" loading="lazy">
+                        </div>
+                        <div class="review-content">
+                            <div class="review-meta">
+                                <span class="category">Writing Assistant</span>
+                                <span class="date">Updated: June 18, 2025</span>
+                            </div>
+                            <h3><a href="chatgpt-review.html">ChatGPT 4.5 Review: Still the King of AI Assistants?</a></h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="score">4.8/5</span>
+                            </div>
+                            <p class="excerpt">Our in-depth evaluation of OpenAI's latest ChatGPT version shows why it remains the most versatile AI assistant, despite growing competition.</p>
+                            <div class="review-footer">
+                                <a href="chatgpt-review.html" class="btn btn-small">Read Review</a>
+                                <div class="pricing">
+                                    <span class="price">$20/month</span>
+                                    <span class="free-tier">Free tier available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-image">
+                            <img src="../images/tools/midjourney.jpg" alt="MidJourney" loading="lazy">
+                        </div>
+                        <div class="review-content">
+                            <div class="review-meta">
+                                <span class="category">AI Art Generator</span>
+                                <span class="date">Updated: June 10, 2025</span>
+                            </div>
+                            <h3><a href="midjourney-review.html">MidJourney v6 Review: Pushing the Boundaries of AI Art</a></h3>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="score">4.6/5</span>
+                            </div>
+                            <p class="excerpt">With stunning photorealism and improved coherence, MidJourney continues to lead the AI art generation space.</p>
+                            <div class="review-footer">
+                                <a href="midjourney-review.html" class="btn btn-small">Read Review</a>
+                                <div class="pricing">
+                                    <span class="price">$10-$60/month</span>
+                                    <span class="free-tier">No free tier</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-image">
+                            <img src="../images/tools/notion-ai.jpg" alt="Notion AI" loading="lazy">
+                        </div>
+                        <div class="review-content">
+                            <div class="review-meta">
+                                <span class="category">Productivity</span>
+                                <span class="date">Updated: June 5, 2025</span>
+                            </div>
+                            <h3><a href="notion-review.html">Notion AI Review: Smart Organization Meets AI</a></h3>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="score">4.3/5</span>
+                            </div>
+                            <p class="excerpt">We test whether Notion's AI features justify the price premium for this already powerful productivity platform.</p>
+                            <div class="review-footer">
+                                <a href="notion-review.html" class="btn btn-small">Read Review</a>
+                                <div class="pricing">
+                                    <span class="price">$8-$15/month</span>
+                                    <span class="free-tier">Limited free plan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-image">
+                            <img src="../images/tools/github-copilot.jpg" alt="GitHub Copilot" loading="lazy">
+                        </div>
+                        <div class="review-content">
+                            <div class="review-meta">
+                                <span class="category">Coding Assistant</span>
+                                <span class="date">Updated: May 28, 2025</span>
+                            </div>
+                            <h3><a href="copilot-review.html">GitHub Copilot X Review: The Programmer's AI Pair</a></h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="score">4.7/5</span>
+                            </div>
+                            <p class="excerpt">Testing the latest version of GitHub's AI coding assistant that now supports chat and documentation lookup.</p>
+                            <div class="review-footer">
+                                <a href="copilot-review.html" class="btn btn-small">Read Review</a>
+                                <div class="pricing">
+                                    <span class="price">$10/month</span>
+                                    <span class="free-tier">Student discount</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-image">
+                            <img src="../images/tools/grammarly.jpg" alt="Grammarly" loading="lazy">
+                        </div>
+                        <div class="review-content">
+                            <div class="review-meta">
+                                <span class="category">Writing Assistant</span>
+                                <span class="date">Updated: May 20, 2025</span>
+                            </div>
+                            <h3><a href="grammarly-review.html">GrammarlyGO Review: More Than Just Grammar Checking</a></h3>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="score">4.2/5</span>
+                            </div>
+                            <p class="excerpt">Grammarly's new AI features transform it from proofreader to full writing assistant - but is it worth upgrading?</p>
+                            <div class="review-footer">
+                                <a href="grammarly-review.html" class="btn btn-small">Read Review</a>
+                                <div class="pricing">
+                                    <span class="price">$12-$30/month</span>
+                                    <span class="free-tier">Basic features free</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-image">
+                            <img src="../images/tools/runway.jpg" alt="Runway ML" loading="lazy">
+                        </div>
+                        <div class="review-content">
+                            <div class="review-meta">
+                                <span class="category">Video/Audio Tools</span>
+                                <span class="date">Updated: May 15, 2025</span>
+                            </div>
+                            <h3><a href="runway-review.html">Runway ML Review: AI Video Editing for Creatives</a></h3>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="score">4.4/5</span>
+                            </div>
+                            <p class="excerpt">From text-to-video to advanced editing, Runway offers powerful AI tools for video creators - at a price.</p>
+                            <div class="review-footer">
+                                <a href="runway-review.html" class="btn btn-small">Read Review</a>
+                                <div class="pricing">
+                                    <span class="price">$15-$95/month</span>
+                                    <span class="free-tier">Trial available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="btn btn-secondary disabled">Previous</a>
+                    <a href="#" class="page-number active">1</a>
+                    <a href="#" class="page-number">2</a>
+                    <a href="#" class="page-number">3</a>
+                    <span class="ellipsis">...</span>
+                    <a href="#" class="page-number">5</a>
+                    <a href="#" class="btn btn-secondary">Next</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <div class="container">
+                <h2>Browse by Category</h2>
+                <div class="categories-grid">
+                    <a href="category-writing.html" class="category-card">
+                        <div class="category-icon">
+                            <img src="../images/icons/writing.svg" alt="Writing Assistants" loading="lazy">
+                        </div>
+                        <h3>Writing Assistants</h3>
+                        <p>AI tools for content creation, editing, and enhancement</p>
+                        <span class="count">24 Tools</span>
+                    </a>
+                    <a href="category-art.html" class="category-card">
+                        <div class="category-icon">
+                            <img src="../images/icons/art.svg" alt="AI Art Generators" loading="lazy">
+                        </div>
+                        <h3>AI Art Generators</h3>
+                        <p>Generate images, illustrations, and designs with AI</p>
+                        <span class="count">18 Tools</span>
+                    </a>
+                    <a href="category-productivity.html" class="category-card">
+                        <div class="category-icon">
+                            <img src="../images/icons/productivity.svg" alt="Productivity" loading="lazy">
+                        </div>
+                        <h3>Productivity</h3>
+                        <p>AI-powered tools to organize and optimize your workflow</p>
+                        <span class="count">32 Tools</span>
+                    </a>
+                    <a href="category-coding.html" class="category-card">
+                        <div class="category-icon">
+                            <img src="../images/icons/coding.svg" alt="Coding Assistants" loading="lazy">
+                        </div>
+                        <h3>Coding Assistants</h3>
+                        <p>AI pair programmers and development tools</p>
+                        <span class="count">15 Tools</span>
+                    </a>
+                    <a href="category-video.html" class="category-card">
+                        <div class="category-icon">
+                            <img src="../images/icons/video.svg" alt="Video/Audio Tools" loading="lazy">
+                        </div>
+                        <h3>Video/Audio Tools</h3>
+                        <p>AI for video editing, voice generation, and sound design</p>
+                        <span class="count">12 Tools</span>
+                    </a>
+                    <a href="category-other.html" class="category-card">
+                        <div class="category-icon">
+                            <img src="../images/icons/other.svg" alt="Other AI Tools" loading="lazy">
+                        </div>
+                        <h3>Other AI Tools</h3>
+                        <p>Specialized AI applications and emerging technologies</p>
+                        <span class="count">28 Tools</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-box">
+                    <div class="newsletter-content">
+                        <h2>Get the Latest Reviews</h2>
+                        <p>Subscribe to our newsletter for weekly AI tool reviews, comparisons, and productivity tips.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="../images/logo-dark.png" alt="ToolifyAI Logo" width="190" height="70" loading="lazy">
+                    <p>Helping you navigate the world of AI tools for maximum productivity and success.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="index.html">Tool Reviews</a></li>
+                        <li><a href="../guides/index.html">How-To Guides</a></li>
+                        <li><a href="../compare/index.html">Compare Tools</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../students/index.html">AI for Students</a></li>
+                        <li><a href="../freelancers/index.html">AI for Freelancers</a></li>
+                        <li><a href="#">AI News</a></li>
+                        <li><a href="#">Productivity Tips</a></li>
+                        <li><a href="#">Tool Directory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest AI tool updates and productivity tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ToolifyAI.tech. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                    <a href="../contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+    <script src="../js/dark-mode.js" defer></script>
+</body>
+
+</html>

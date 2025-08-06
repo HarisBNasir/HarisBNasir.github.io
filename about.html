@@ -1,132 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about ToolifyAI - our mission to help you find the best AI tools for productivity and how we review and test each product.">
-    <title>About ToolifyAI - Helping You Find the Best AI Tools</title>
+    <meta name="description" content="Learn about ToolifyAI and Haris Bin Nasir, the creator behind this AI tools review platform.">
+    <title>About ToolifyAI - Helping You Navigate the World of AI Tools</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/dark-mode.css" id="darkModeStyle" disabled>
-    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css" id="darkModeStyle" disabled>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header class="header">
-        <!-- Same header as index.html -->
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-light.png" alt="ToolifyAI" class="logo-light" width="200">
+                <img src="images/logo-dark.png" alt="ToolifyAI" class="logo-dark" width="200">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" data-nav="home">Home</a></li>
+                    <li><a href="reviews/index.html" data-nav="reviews">Tool Reviews</a></li>
+                    <li><a href="guides/index.html" data-nav="guides">How-To Guides</a></li>
+                    <li><a href="students/index.html" data-nav="students">AI for Students</a></li>
+                    <li><a href="freelancers/index.html" data-nav="freelancers">AI for Freelancers</a></li>
+                    <li><a href="compare/index.html" data-nav="compare">Compare Tools</a></li>
+                    <li><a href="blog.html" data-nav="blog">Blog</a></li>
+                    <li><a href="about.html" data-nav="about" class="active">About</a></li>
+                    <li><a href="contact.html" data-nav="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <span class="toggle-icon"></span>
+            </button>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
-    <main class="about-page">
-        <section class="page-header">
+    <main>
+        <section class="about-hero">
             <div class="container">
                 <h1>About ToolifyAI</h1>
-                <p class="subtitle">Helping you navigate the world of AI tools for maximum productivity</p>
+                <p class="subtitle">Helping you navigate the rapidly evolving world of AI tools and technology</p>
             </div>
         </section>
 
-        <section class="about-intro">
+        <section class="about-mission">
             <div class="container">
-                <div class="about-content">
-                    <h2>Our Story</h2>
-                    <p>ToolifyAI was founded in 2024 by a team of tech enthusiasts and productivity experts who saw the potential of AI tools to transform how we work, study, and create. As students and professionals ourselves, we experienced firsthand the overwhelming number of AI tools available and the challenge of finding the right ones for specific needs.</p>
-                    <p>What started as a personal project to keep track of useful AI tools quickly grew into a comprehensive resource for thousands of readers looking for honest, in-depth reviews and practical guides.</p>
+                <div class="mission-content">
+                    <h2>Our Mission</h2>
+                    <p>At ToolifyAI, we believe that artificial intelligence has the power to transform how we work, learn, and create. Our mission is to demystify AI tools and help individuals and businesses find the right solutions to boost their productivity and creativity.</p>
+                    <p>With hundreds of new AI tools launching every month, it's becoming increasingly difficult to separate the truly useful from the merely hype. That's where we come in - we test, review, and compare these tools so you don't have to.</p>
                 </div>
-                <div class="about-image">
-                    <img src="../images/about-team.jpg" alt="ToolifyAI Team" width="600" height="400" loading="lazy">
+                <div class="mission-image">
+                    <img src="images/ai-mission.jpg" alt="AI Technology Mission" loading="lazy">
                 </div>
             </div>
         </section>
 
-        <section class="mission-section">
+        <section class="founder-section">
             <div class="container">
-                <h2>Our Mission</h2>
-                <div class="mission-grid">
-                    <div class="mission-card">
-                        <div class="mission-icon">🔍</div>
-                        <h3>Discover</h3>
-                        <p>We constantly search for new and emerging AI tools that can boost productivity.</p>
+                <h2>Meet the Founder</h2>
+                <div class="founder-profile">
+                    <div class="founder-image">
+                        <img src="images/haris-profile.jpg" alt="Haris Bin Nasir" loading="lazy">
                     </div>
-                    <div class="mission-card">
-                        <div class="mission-icon">🧪</div>
-                        <h3>Test</h3>
-                        <p>We rigorously test each tool in real-world scenarios to evaluate its effectiveness.</p>
-                    </div>
-                    <div class="mission-card">
-                        <div class="mission-icon">📊</div>
-                        <h3>Analyze</h3>
-                        <p>We compare features, pricing, and performance to provide balanced assessments.</p>
-                    </div>
-                    <div class="mission-card">
-                        <div class="mission-icon">🎯</div>
-                        <h3>Recommend</h3>
-                        <p>We help you find the perfect tools for your specific needs and budget.</p>
+                    <div class="founder-bio">
+                        <h3>Haris Bin Nasir</h3>
+                        <p class="title">AI Enthusiast & Tech Writer</p>
+                        <p>Hello! I'm Haris, a tech enthusiast passionate about artificial intelligence and its potential to transform our lives. With a background in computer science and years of experience testing productivity tools, I created ToolifyAI to share my knowledge and help others navigate the complex world of AI applications.</p>
+                        <p>When I'm not testing the latest AI tools, you can find me working on my personal projects, writing on my blog at <a href="https://harissbinnasir.me" target="_blank">harissbinnasir.me</a>, or sharing tech insights on social media.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/harisbinnasir" target="_blank" aria-label="GitHub"><i class="icon-github"></i></a>
+                            <a href="https://linkedin.com/in/harisbinnasir" target="_blank" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                            <a href="https://twitter.com/harisbinnasir" target="_blank" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="team-section">
+        <section class="team-values">
             <div class="container">
-                <h2>Meet Our Team</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="../images/team-alex.jpg" alt="Alex Johnson" loading="lazy">
-                        <h3>Alex Johnson</h3>
-                        <p class="role">Founder & Lead Reviewer</p>
-                        <p>Computer Science graduate with a passion for AI and productivity hacks.</p>
+                <h2>Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <img src="images/icon-honesty.svg" alt="Honesty Icon" loading="lazy">
+                        </div>
+                        <h3>Honest Reviews</h3>
+                        <p>We maintain complete editorial independence. Our reviews are based on extensive testing and real-world use cases.</p>
                     </div>
-                    <div class="team-member">
-                        <img src="../images/team-sarah.jpg" alt="Sarah Chen" loading="lazy">
-                        <h3>Sarah Chen</h3>
-                        <p class="role">Content Editor</p>
-                        <p>Former educator focused on creating practical, actionable guides.</p>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <img src="images/icon-depth.svg" alt="Depth Icon" loading="lazy">
+                        </div>
+                        <h3>In-Depth Analysis</h3>
+                        <p>We go beyond surface-level features to explore how tools actually perform in different scenarios.</p>
                     </div>
-                    <div class="team-member">
-                        <img src="../images/team-mike.jpg" alt="Mike Rodriguez" loading="lazy">
-                        <h3>Mike Rodriguez</h3>
-                        <p class="role">Freelance Specialist</p>
-                        <p>Digital nomad who tests tools in real client projects.</p>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <img src="images/icon-practical.svg" alt="Practical Icon" loading="lazy">
+                        </div>
+                        <h3>Practical Guidance</h3>
+                        <p>Our how-to guides focus on actionable advice you can apply immediately to your work or studies.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="review-process">
+        <section class="ad-section">
             <div class="container">
-                <h2>Our Review Process</h2>
-                <div class="process-steps">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>Initial Research</h3>
-                            <p>We identify promising tools through industry news, user recommendations, and our own searches.</p>
+                <div class="ad-banner">
+                    <div class="ad-placeholder">Advertisement</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do you test and review AI tools?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We follow a rigorous testing process for each tool: 1) Initial setup and first impressions, 2) Core functionality testing, 3) Performance benchmarking, 4) Real-world use case evaluation, 5) Comparison with alternatives. We typically spend 10-20 hours with each tool before writing our review.</p>
                         </div>
                     </div>
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>Hands-On Testing</h3>
-                            <p>We use each tool extensively for at least 2 weeks in real work scenarios.</p>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you accept sponsorships or paid promotions?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>While we may accept sponsorships, these are always clearly marked as such. Sponsored content never influences our editorial reviews - we maintain strict separation between advertising and editorial content. Our primary commitment is to our readers.</p>
                         </div>
                     </div>
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>Feature Analysis</h3>
-                            <p>We evaluate all features, comparing them to alternatives and assessing value for money.</p>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I suggest a tool for review?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We welcome suggestions from our readers. Please use our <a href="contact.html">contact form</a> to suggest tools you'd like us to review. While we can't promise to review every suggestion, we prioritize tools that seem most useful to our audience.</p>
                         </div>
                     </div>
-                    <div class="process-step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h3>User Feedback</h3>
-                            <p>We gather and analyze feedback from actual users across various platforms.</p>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How often do you update your reviews?</h3>
+                            <span class="faq-toggle">+</span>
                         </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">5</div>
-                        <div class="step-content">
-                            <h3>Final Rating</h3>
-                            <p>We assign ratings based on performance, ease of use, pricing, and support.</p>
+                        <div class="faq-answer">
+                            <p>We review and update our content quarterly for major tools, and whenever significant updates are released. You'll always find the "Last Updated" date at the top of each review. Our comparison articles are updated at least twice a year.</p>
                         </div>
                     </div>
                 </div>
@@ -135,10 +169,60 @@
     </main>
 
     <footer class="footer">
-        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/logo-dark.png" alt="ToolifyAI Logo" width="190" height="70" loading="lazy">
+                    <p>Helping you navigate the world of AI tools for maximum productivity and success.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="reviews/index.html">Tool Reviews</a></li>
+                        <li><a href="guides/index.html">How-To Guides</a></li>
+                        <li><a href="compare/index.html">Compare Tools</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="students/index.html">AI for Students</a></li>
+                        <li><a href="freelancers/index.html">AI for Freelancers</a></li>
+                        <li><a href="#">AI News</a></li>
+                        <li><a href="#">Productivity Tips</a></li>
+                        <li><a href="#">Tool Directory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest AI tool updates and productivity tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ToolifyAI.tech. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="../js/main.js" defer></script>
-    <script src="../js/dark-mode.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/dark-mode.js" defer></script>
 </body>
+
 </html>

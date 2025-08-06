@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact ToolifyAI with your questions, suggestions, or partnership inquiries. We'd love to hear from you!">
-    <title>Contact ToolifyAI - Questions, Suggestions & Partnerships</title>
+    <meta name="description" content="Contact ToolifyAI for tool review suggestions, partnerships, or general inquiries about AI productivity tools.">
+    <title>Contact ToolifyAI - Get in Touch About AI Tools</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/dark-mode.css" id="darkModeStyle" disabled>
-    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css" id="darkModeStyle" disabled>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header class="header">
-        <!-- Same header as index.html -->
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-light.png" alt="ToolifyAI" class="logo-light" width="200">
+                <img src="images/logo-dark.png" alt="ToolifyAI" class="logo-dark" width="200">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" data-nav="home">Home</a></li>
+                    <li><a href="reviews/index.html" data-nav="reviews">Tool Reviews</a></li>
+                    <li><a href="guides/index.html" data-nav="guides">How-To Guides</a></li>
+                    <li><a href="students/index.html" data-nav="students">AI for Students</a></li>
+                    <li><a href="freelancers/index.html" data-nav="freelancers">AI for Freelancers</a></li>
+                    <li><a href="compare/index.html" data-nav="compare">Compare Tools</a></li>
+                    <li><a href="blog.html" data-nav="blog">Blog</a></li>
+                    <li><a href="about.html" data-nav="about">About</a></li>
+                    <li><a href="contact.html" data-nav="contact" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <span class="toggle-icon"></span>
+            </button>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
-    <main class="contact-page">
-        <section class="page-header">
+    <main>
+        <section class="contact-hero">
             <div class="container">
-                <h1>Contact Us</h1>
-                <p class="subtitle">Have questions, suggestions, or want to partner with us? We'd love to hear from you!</p>
+                <h1>Get in Touch</h1>
+                <p class="subtitle">Have questions about AI tools? Want to suggest a tool for review? We'd love to hear from you!</p>
             </div>
         </section>
 
@@ -28,7 +56,7 @@
                 <div class="contact-grid">
                     <div class="contact-form">
                         <h2>Send Us a Message</h2>
-                        <form id="contactForm">
+                        <form id="contactForm" action="#" method="POST">
                             <div class="form-group">
                                 <label for="name">Your Name</label>
                                 <input type="text" id="name" name="name" required>
@@ -39,11 +67,12 @@
                             </div>
                             <div class="form-group">
                                 <label for="subject">Subject</label>
-                                <select id="subject" name="subject">
-                                    <option value="general">General Inquiry</option>
-                                    <option value="suggestion">Tool Suggestion</option>
-                                    <option value="partnership">Partnership</option>
-                                    <option value="advertising">Advertising</option>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select a topic</option>
+                                    <option value="tool-suggestion">Tool Suggestion</option>
+                                    <option value="partnership">Partnership Inquiry</option>
+                                    <option value="general-question">General Question</option>
+                                    <option value="feedback">Feedback</option>
                                     <option value="other">Other</option>
                                 </select>
                             </div>
@@ -51,74 +80,141 @@
                                 <label for="message">Your Message</label>
                                 <textarea id="message" name="message" rows="6" required></textarea>
                             </div>
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                            </div>
                             <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
                     </div>
                     <div class="contact-info">
-                        <h2>Other Ways to Reach Us</h2>
+                        <h2>Other Ways to Connect</h2>
                         <div class="info-card">
-                            <div class="info-icon">✉️</div>
-                            <h3>Email</h3>
-                            <p><a href="mailto:hello@toolifyai.tech">hello@toolifyai.tech</a></p>
+                            <div class="info-icon">
+                                <img src="images/icon-email.svg" alt="Email Icon" loading="lazy">
+                            </div>
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:contact@toolifyai.tech">contact@toolifyai.tech</a></p>
+                            <p>We typically respond within 24 hours</p>
                         </div>
                         <div class="info-card">
-                            <div class="info-icon">💬</div>
-                            <h3>Social Media</h3>
+                            <div class="info-icon">
+                                <img src="images/icon-social.svg" alt="Social Media Icon" loading="lazy">
+                            </div>
+                            <h3>Connect on Social</h3>
                             <div class="social-links">
-                                <a href="#" aria-label="Twitter"><i class="icon-twitter"></i> Twitter</a>
-                                <a href="#" aria-label="Facebook"><i class="icon-facebook"></i> Facebook</a>
-                                <a href="#" aria-label="Instagram"><i class="icon-instagram"></i> Instagram</a>
+                                <a href="https://twitter.com/toolifyai" target="_blank" aria-label="Twitter"><i class="icon-twitter"></i> @toolifyai</a>
+                                <a href="https://linkedin.com/company/toolifyai" target="_blank" aria-label="LinkedIn"><i class="icon-linkedin"></i> ToolifyAI</a>
+                                <a href="https://instagram.com/toolifyai" target="_blank" aria-label="Instagram"><i class="icon-instagram"></i> @toolifyai</a>
                             </div>
                         </div>
                         <div class="info-card">
-                            <div class="info-icon">🏢</div>
-                            <h3>Business Inquiries</h3>
-                            <p><a href="mailto:partners@toolifyai.tech">partners@toolifyai.tech</a></p>
+                            <div class="info-icon">
+                                <img src="images/icon-suggest.svg" alt="Suggestion Icon" loading="lazy">
+                            </div>
+                            <h3>Suggest a Tool</h3>
+                            <p>Know an AI tool we should review? <a href="#tool-suggestion-form">Fill out our quick suggestion form</a> or tag us on social media.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="faq-section">
+        <section class="faq-contact-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-accordion">
+                <h2>Common Questions</h2>
+                <div class="faq-grid">
                     <div class="faq-item">
-                        <button class="faq-question">How do you choose which tools to review?</button>
-                        <div class="faq-answer">
-                            <p>We select tools based on several factors including popularity, unique features, user requests, and potential to improve productivity. We prioritize tools that serve students, freelancers, and professionals in their work.</p>
-                        </div>
+                        <h3>How long does it take to get a response?</h3>
+                        <p>We aim to respond to all inquiries within 24 hours on weekdays. Weekend messages may take until Monday for a response.</p>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Can I suggest a tool for review?</button>
-                        <div class="faq-answer">
-                            <p>Absolutely! We welcome suggestions from our readers. Please use our contact form or email us at suggestions@toolifyai.tech with details about the tool you'd like us to review.</p>
-                        </div>
+                        <h3>Do you accept guest posts or collaborations?</h3>
+                        <p>Yes! We're open to guest posts from AI tool experts. Please include writing samples or portfolio links in your message.</p>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Do you accept sponsored content?</button>
-                        <div class="faq-answer">
-                            <p>We may publish sponsored content, but it will always be clearly marked as such. Our reviews remain unbiased regardless of sponsorship. We maintain strict editorial independence and only recommend tools we genuinely find valuable.</p>
-                        </div>
+                        <h3>Can I request a specific tool comparison?</h3>
+                        <p>Absolutely. We prioritize comparison requests from our community. Let us know which tools you'd like us to compare.</p>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How often do you update your reviews?</button>
-                        <div class="faq-answer">
-                            <p>We review our content quarterly to ensure information remains current. When tools receive significant updates, we prioritize re-evaluating them sooner. You can always check the "Last Updated" date at the top of each review.</p>
-                        </div>
+                        <h3>Do you offer consulting services?</h3>
+                        <p>We provide limited consulting for AI tool implementation. Contact us with details about your needs for availability.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-box">
+                    <div class="newsletter-content">
+                        <h2>Stay Updated</h2>
+                        <p>Subscribe to our newsletter for weekly AI tool updates, productivity tips, and exclusive content.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/logo-dark.png" alt="ToolifyAI Logo" width="190" height="70" loading="lazy">
+                    <p>Helping you navigate the world of AI tools for maximum productivity and success.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="reviews/index.html">Tool Reviews</a></li>
+                        <li><a href="guides/index.html">How-To Guides</a></li>
+                        <li><a href="compare/index.html">Compare Tools</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="students/index.html">AI for Students</a></li>
+                        <li><a href="freelancers/index.html">AI for Freelancers</a></li>
+                        <li><a href="#">AI News</a></li>
+                        <li><a href="#">Productivity Tips</a></li>
+                        <li><a href="#">Tool Directory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest AI tool updates and productivity tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ToolifyAI.tech. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="../js/main.js" defer></script>
-    <script src="../js/dark-mode.js" defer></script>
-    <script src="../js/contact-form.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/dark-mode.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
+
 </html>
