@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional guide to creating stunning social media graphics with MidJourney AI. Learn branding, composition, and optimization techniques.">
+    <title>MidJourney Social Media Guide | ToolifyAI - AI Art Guides</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css" id="darkModeStyle" disabled>
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo-light.png" alt="ToolifyAI" class="logo-light" width="200">
+                <img src="../images/logo-dark.png" alt="ToolifyAI" class="logo-dark" width="200">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html" data-nav="home">Home</a></li>
+                    <li><a href="../reviews/index.html" data-nav="reviews">Tool Reviews</a></li>
+                    <li><a href="index.html" data-nav="guides" class="active">How-To Guides</a></li>
+                    <li><a href="../students/index.html" data-nav="students">AI for Students</a></li>
+                    <li><a href="../freelancers/index.html" data-nav="freelancers">AI for Freelancers</a></li>
+                    <li><a href="../compare/index.html" data-nav="compare">Compare Tools</a></li>
+                    <li><a href="../blog.html" data-nav="blog">Blog</a></li>
+                    <li><a href="../about.html" data-nav="about">About</a></li>
+                    <li><a href="../contact.html" data-nav="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <span class="toggle-icon"></span>
+            </button>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <article class="guide-template">
+            <section class="guide-hero">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="../index.html">Home</a> / 
+                        <a href="index.html">Guides</a> / 
+                        <a href="category-ai-art.html">AI Art</a> / 
+                        <span>MidJourney Social Media</span>
+                    </div>
+                    <div class="hero-content">
+                        <div class="guide-header">
+                            <div class="guide-meta">
+                                <span class="category">AI Art</span>
+                                <span class="level intermediate">Intermediate</span>
+                                <span class="time">22 min read</span>
+                            </div>
+                            <h1>Creating Stunning Social Media Graphics with MidJourney</h1>
+                            <div class="meta-row">
+                                <span class="author">By Haris Bin Nasir</span>
+                                <span class="date">Updated: June 10, 2025</span>
+                                <span class="views">18K views</span>
+                            </div>
+                        </div>
+                        <p class="subtitle">Learn professional techniques for generating branded visual content that engages your audience and boosts social media performance.</p>
+                        <div class="hero-cta">
+                            <a href="https://www.midjourney.com" target="_blank" class="btn btn-primary">Try MidJourney</a>
+                            <a href="#video-tutorial" class="btn btn-secondary">Watch Video</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="../images/guides/midjourney-social-result.jpg" alt="MidJourney Social Media Examples" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <section class="ad-section">
+                <div class="container">
+                    <div class="ad-banner">
+                        <div class="ad-placeholder">Advertisement</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="guide-content">
+                <div class="container">
+                    <div class="content-grid">
+                        <div class="main-content">
+                            <div class="toc-widget">
+                                <h3>Table of Contents</h3>
+                                <ol class="toc-list">
+                                    <li><a href="#overview">Overview</a></li>
+                                    <li><a href="#branding">Branding Consistency</a></li>
+                                    <li><a href="#prompts">Crafting Effective Prompts</a></li>
+                                    <li><a href="#formats">Platform-Specific Formats</a></li>
+                                    <li><a href="#workflow">Efficient Workflow</a></li>
+                                    <li><a href="#postprocessing">Post-Processing</a></li>
+                                    <li><a href="#tips">Pro Tips</a></li>
+                                    <li><a href="#examples">Example Prompts</a></li>
+                                    <li><a href="#faq">FAQ</a></li>
+                                </ol>
+                            </div>
+
+                            <h2 id="overview">Overview</h2>
+                            <p>MidJourney revolutionizes social media content creation by enabling anyone to generate professional-quality graphics with simple text prompts. This guide covers:</p>
+                            <ul>
+                                <li>Maintaining brand consistency across generated images</li>
+                                <li>Tailoring prompts for different social platforms</li>
+                                <li>Creating cohesive content series</li>
+                                <li>Optimizing images for engagement</li>
+                                <li>Post-processing techniques</li>
+                            </ul>
+                            <div class="note">
+                                <p><strong>Note:</strong> MidJourney outputs are unique each time - save your favorite seeds and parameters for consistent branding.</p>
+                            </div>
+
+                            <h2 id="branding">Branding Consistency</h2>
+                            <p>Create recognizable visuals that align with your brand identity:</p>
+                            
+                            <h3>Color Palette</h3>
+                            <div class="example">
+                                <p class="example-title">Prompt Example:</p>
+                                <div class="example-content">
+                                    <p>"Minimalist social media post about productivity, using only navy blue (#001F3F) and gold (#FFD700) colors, clean lines, flat design style --v 6 --ar 1:1"</p>
+                                </div>
+                            </div>
+
+                            <h3>Style Consistency</h3>
+                            <p>Use consistent artistic styles across posts:</p>
+                            <div class="format-cards">
+                                <div class="format-card">
+                                    <h3>Illustrated</h3>
+                                    <p>Great for brands targeting creative audiences</p>
+                                    <div class="example">
+                                        <p class="example-title">Prompt Example:</p>
+                                        <div class="example-content">
+                                            <p>"Whimsical watercolor illustration of a coffee shop scene, pastel colors, soft edges --style 4b"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="format-card">
+                                    <h3>Photorealistic</h3>
+                                    <p>Ideal for product showcases</p>
+                                    <div class="example">
+                                        <p class="example-title">Prompt Example:</p>
+                                        <div class="example-content">
+                                            <p>"Hyper-realistic product photo of a minimalist wristwatch on marble surface, studio lighting, 8k --v 6"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="format-card">
+                                    <h3>3D Rendered</h3>
+                                    <p>Modern tech/appeal</p>
+                                    <div class="example">
+                                        <p class="example-title">Prompt Example:</p>
+                                        <div class="example-content">
+                                            <p>"Isometric 3D render of cloud computing concept, neon blue accents, glass materials, clean background --ar 16:9"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 id="prompts">Crafting Effective Prompts</h2>
+                            <p>Structure your prompts for optimal results:</p>
+                            
+                            <div class="checklist">
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item1" checked>
+                                    <label for="item1">Subject (what you want to depict)</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item2">
+                                    <label for="item2">Style (artistic approach)</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item3">
+                                    <label for="item3">Color palette</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item4">
+                                    <label for="item4">Composition</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item5">
+                                    <label for="item5">Technical parameters (--v, --ar, etc.)</label>
+                                </div>
+                            </div>
+
+                            <h3>Prompt Formula</h3>
+                            <div class="example">
+                                <p class="example-title">Basic Structure:</p>
+                                <div class="example-content">
+                                    <p>"[Subject description], [style/artist references], [color scheme], [composition details], [technical parameters]"</p>
+                                </div>
+                            </div>
+
+                            <h2 id="formats">Platform-Specific Formats</h2>
+                            <p>Optimize for each social platform's requirements:</p>
+                            
+                            <div class="format-cards">
+                                <div class="format-card">
+                                    <h3>Instagram</h3>
+                                    <p>Square (1:1) or Portrait (4:5)</p>
+                                    <div class="example">
+                                        <p class="example-title">Prompt Example:</p>
+                                        <div class="example-content">
+                                            <p>"Aesthetic flat lay of workspace with laptop, notebook and coffee, muted earth tones, soft shadows --ar 1:1 --q 2"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="format-card">
+                                    <h3>Twitter</h3>
+                                    <p>Landscape (16:9) or Square</p>
+                                    <div class="example">
+                                        <p class="example-title">Prompt Example:</p>
+                                        <div class="example-content">
+                                            <p>"Minimalist infographic about AI statistics, clean typography, blue and white color scheme --ar 16:9"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="format-card">
+                                    <h3>Pinterest</h3>
+                                    <p>Tall (2:3 or 9:16)</p>
+                                    <div class="example">
+                                        <p class="example-title">Prompt Example:</p>
+                                        <div class="example-content">
+                                            <p>"Step-by-step recipe infographic in vertical format, hand-drawn style, warm colors --ar 2:3"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 id="workflow">Efficient Workflow</h2>
+                            <p>Streamline your content creation process:</p>
+                            
+                            <h3>Batch Creation</h3>
+                            <div class="example">
+                                <p class="example-title">Prompt Example:</p>
+                                <div class="example-content">
+                                    <p>"Generate 4 variations of a motivational quote post with mountain imagery, different times of day (sunrise, midday, sunset, night), cinematic lighting --v 6"</p>
+                                </div>
+                            </div>
+
+                            <h3>Series Creation</h3>
+                            <p>Create cohesive content series using seeds:</p>
+                            <div class="example">
+                                <p class="example-title">Prompt Example:</p>
+                                <div class="example-content">
+                                    <p>"Continuing from image seed 12345, create another infographic in the same style about cybersecurity tips, maintaining the purple/black color scheme --seed 12345"</p>
+                                </div>
+                            </div>
+
+                            <h2 id="postprocessing">Post-Processing</h2>
+                            <p>Enhance MidJourney outputs with these tools:</p>
+                            
+                            <div class="tips-grid">
+                                <div class="tip-card">
+                                    <div class="tip-icon">✏️</div>
+                                    <h3>Upscaling</h3>
+                                    <p>Use tools like Topaz Gigapixel or MidJourney's built-in upscaler for higher resolution.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <div class="tip-icon">🎨</div>
+                                    <h3>Color Correction</h3>
+                                    <p>Adjust colors in Photoshop or Canva to match brand guidelines.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <div class="tip-icon">🖋️</div>
+                                    <h3>Text Overlays</h3>
+                                    <p>Add text in Canva or Adobe Express with proper contrast.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <div class="tip-icon">✂️</div>
+                                    <h3>Cropping</h3>
+                                    <p>Ensure key elements aren't cut off on different platforms.</p>
+                                </div>
+                            </div>
+
+                            <h2 id="tips">Pro Tips</h2>
+                            <div class="tips-grid">
+                                <div class="tip-card">
+                                    <div class="tip-icon">🔍</div>
+                                    <h3>Reference Artists</h3>
+                                    <p>Study "::by [artist name]::" to emulate specific styles.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <div class="tip-icon">📝</div>
+                                    <h3>Keep Prompts</h3>
+                                    <p>Maintain a database of successful prompts.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <div class="tip-icon">🎭</div>
+                                    <h3>Chaos Parameter</h3>
+                                    <p>Use "--chaos 20-70" for more creative variations.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <div class="tip-icon">🔄</div>
+                                    <h3>Remix Mode</h3>
+                                    <p>Enable to tweak existing prompts for variations.</p>
+                                </div>
+                            </div>
+
+                            <h2 id="examples">Example Prompts</h2>
+                            <div class="prompt-examples">
+                                <div class="prompt-card">
+                                    <div class="prompt-content">
+                                        <p>"Modern Instagram post about digital detox, showing smartphone melting into flowers, surrealism style by Salvador Dali, pastel colors --ar 4:5 --v 6"</p>
+                                    </div>
+                                    <button class="btn btn-small copy-prompt">Copy Prompt</button>
+                                </div>
+                                <div class="prompt-card">
+                                    <div class="prompt-content">
+                                        <p>"LinkedIn header image for tech startup, abstract circuit board pattern in company colors (blue #1A73E8 and gray #5F6368), geometric style --ar 16:9"</p>
+                                    </div>
+                                    <button class="btn btn-small copy-prompt">Copy Prompt</button>
+                                </div>
+                                <div class="prompt-card">
+                                    <div class="prompt-content">
+                                        <p>"Pinterest pin about home organization, isometric 3D render of closet storage solutions, soft lighting, muted colors --ar 2:3 --style 4b"</p>
+                                    </div>
+                                    <button class="btn btn-small copy-prompt">Copy Prompt</button>
+                                </div>
+                            </div>
+
+                            <h2 id="video-tutorial">Video Tutorial</h2>
+                            <div class="video-embed">
+                                <div class="video-placeholder">
+                                    <img src="../images/guides/midjourney-video-thumb.jpg" alt="Video Thumbnail" loading="lazy">
+                                    <button class="play-button">▶</button>
+                                </div>
+                                <p class="video-caption">Watch our 15-minute tutorial on creating social media graphics with MidJourney</p>
+                            </div>
+
+                            <h2 id="faq">Frequently Asked Questions</h2>
+                            <div class="faq-guide">
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h3>How do I get consistent character/style across multiple posts?</h3>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>Use the same seed number and maintain consistent prompt structure. For characters, describe specific features and use image references when possible.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h3>What's the best resolution for social media?</h3>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>Generate at highest quality (--q 2) then upscale. Instagram: 1080x1080 (square), 1080x1350 (portrait). Twitter: 1600x900. Pinterest: 1000x1500.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h3>Can I use MidJourney images commercially?</h3>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>Yes, if you're a paying member (Standard or Pro plan). Always check MidJourney's latest Terms of Service for commercial use policies.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h3>How do I add text to MidJourney images?</h3>
+                                        <span class="faq-toggle">+</span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>MidJourney isn't reliable for text generation. Create the base image, then add text in Canva, Photoshop, or other design tools.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-cta">
+                                <div class="cta-box">
+                                    <h3>Ready to Transform Your Social Media?</h3>
+                                    <p>Start creating professional, on-brand graphics in minutes with MidJourney.</p>
+                                    <a href="https://www.midjourney.com" target="_blank" class="btn btn-primary">Try MidJourney Now</a>
+                                </div>
+                            </div>
+
+                            <div class="content-update">
+                                <p><strong>Last Updated:</strong> June 10, 2025 | <a href="../contact.html">Suggest an Update</a></p>
+                            </div>
+                        </div>
+
+                        <aside class="sidebar">
+                            <div class="sidebar-widget">
+                                <h3>Guide Summary</h3>
+                                <div class="summary-card">
+                                    <div class="summary-item">
+                                        <span class="summary-label">Difficulty</span>
+                                        <span class="summary-value intermediate">Intermediate</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="summary-label">Time Required</span>
+                                        <span class="summary-value">30-90 mins</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="summary-label">Tools Needed</span>
+                                        <span class="summary-value">MidJourney, Design Software</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="summary-label">Best For</span>
+                                        <span class="summary-value">Social media managers, content creators</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget">
+                                <h3>Download Resources</h3>
+                                <div class="downloads">
+                                    <a href="#" class="download-item">
+                                        <span class="download-icon">📝</span>
+                                        <span class="download-text">Prompt Template</span>
+                                    </a>
+                                    <a href="#" class="download-item">
+                                        <span class="download-icon">🎨</span>
+                                        <span class="download-text">Color Palette Guide</span>
+                                    </a>
+                                    <a href="#" class="download-item">
+                                        <span class="download-icon">📐</span>
+                                        <span class="download-text">Aspect Ratio Cheatsheet</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget ad-widget">
+                                <div class="ad-square">
+                                    <div class="ad-placeholder">Advertisement</div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget">
+                                <h3>Related Guides</h3>
+                                <div class="related-guides">
+                                    <a href="ai-branding.html" class="guide-item">
+                                        <img src="../images/guides/branding-thumb.jpg" alt="AI Branding Guide" loading="lazy">
+                                        <h4>AI for Brand Identity</h4>
+                                        <span class="guide-meta">Design · 25 min read</span>
+                                    </a>
+                                    <a href="canva-ai.html" class="guide-item">
+                                        <img src="../images/guides/canva-thumb.jpg" alt="Canva Guide" loading="lazy">
+                                        <h4>Canva AI Tools</h4>
+                                        <span class="guide-meta">Design · 18 min read</span>
+                                    </a>
+                                    <a href="content-calendar.html" class="guide-item">
+                                        <img src="../images/guides/calendar-thumb.jpg" alt="Content Calendar Guide" loading="lazy">
+                                        <h4>AI Content Planning</h4>
+                                        <span class="guide-meta">Marketing · 20 min read</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="../images/logo-dark.png" alt="ToolifyAI Logo" width="190" height="70" loading="lazy">
+                    <p>Helping you navigate the world of AI tools for maximum productivity and success.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../reviews/index.html">Tool Reviews</a></li>
+                        <li><a href="index.html">How-To Guides</a></li>
+                        <li><a href="../compare/index.html">Compare Tools</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../students/index.html">AI for Students</a></li>
+                        <li><a href="../freelancers/index.html">AI for Freelancers</a></li>
+                        <li><a href="#">AI News</a></li>
+                        <li><a href="#">Productivity Tips</a></li>
+                        <li><a href="#">Tool Directory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest AI tool updates and productivity tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ToolifyAI.tech. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                    <a href="../contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+    <script src="../js/dark-mode.js" defer></script>
+</body>
+
+</html>

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Step-by-step guide to writing a professional resume with ChatGPT. Learn how to structure, optimize, and tailor your resume for job applications.">
-    <title>How to Write a Resume with ChatGPT | ToolifyAI - AI Productivity Guides</title>
+    <meta name="description" content="Professional guide to mastering GitHub Copilot for faster development. Learn integration techniques, best practices, and advanced features.">
+    <title>GitHub Copilot Guide | ToolifyAI - Developer Guides</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/dark-mode.css" id="darkModeStyle" disabled>
@@ -44,42 +44,37 @@
     </header>
 
     <main>
-        <section>
-                              <div class="breadcrumbs container">
-                <a href="../index.html">Home</a> / 
-                <a href="index.html">Guides</a> / 
-                <a href="category-writing.html">Writing</a> / 
-                <span>Resume with ChatGPT</span>
-            </div>
-        </section>
- 
         <article class="guide-template">
- 
-            
             <section class="guide-hero">
                 <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="../index.html">Home</a> / 
+                        <a href="index.html">Guides</a> / 
+                        <a href="category-coding.html">Coding</a> / 
+                        <span>GitHub Copilot</span>
+                    </div>
                     <div class="hero-content">
                         <div class="guide-header">
                             <div class="guide-meta">
-                                <span class="category">Writing</span>
-                                <span class="level beginner">Beginner</span>
-                                <span class="time">15 min read</span>
+                                <span class="category">Coding</span>
+                                <span class="level advanced">Advanced</span>
+                                <span class="time">30 min read</span>
                             </div>
-                            <h1>How to Write a Winning Resume with ChatGPT</h1>
+                            <h1>Mastering GitHub Copilot for Faster Development</h1>
                             <div class="meta-row">
                                 <span class="author">By Haris Bin Nasir</span>
-                                <span class="date">Updated: June 15, 2025</span>
-                                <span class="views">24K views</span>
+                                <span class="date">Updated: May 28, 2025</span>
+                                <span class="views">12K views</span>
                             </div>
                         </div>
-                        <p class="subtitle">Step-by-step instructions to craft a professional resume that stands out, using ChatGPT for content, formatting, and optimization tips.</p>
+                        <p class="subtitle">Professional techniques to integrate AI pair programming into your workflow and dramatically boost coding efficiency.</p>
                         <div class="hero-cta">
-                            <a href="https://chat.openai.com" target="_blank" class="btn btn-primary">Try ChatGPT</a>
+                            <a href="https://github.com/features/copilot" target="_blank" class="btn btn-primary">Try GitHub Copilot</a>
                             <a href="#video-tutorial" class="btn btn-secondary">Watch Video</a>
                         </div>
                     </div>
                     <div class="hero-image">
-                        <img src="../images/guides/resume-result.jpg" alt="Resume Example" loading="lazy">
+                        <img src="../images/guides/copilot-demo.jpg" alt="GitHub Copilot in Action" loading="lazy">
                     </div>
                 </div>
             </section>
@@ -100,229 +95,244 @@
                                 <h3>Table of Contents</h3>
                                 <ol class="toc-list">
                                     <li><a href="#overview">Overview</a></li>
-                                    <li><a href="#step1">Step 1: Gather Your Information</a></li>
-                                    <li><a href="#step2">Step 2: Choose a Resume Format</a></li>
-                                    <li><a href="#step3">Step 3: Generate Initial Content</a></li>
-                                    <li><a href="#step4">Step 4: Refine & Optimize</a></li>
-                                    <li><a href="#step5">Step 5: Formatting & Final Touches</a></li>
-                                    <li><a href="#tips">Pro Tips & Best Practices</a></li>
-                                    <li><a href="#examples">Example Prompts</a></li>
+                                    <li><a href="#setup">Setup & Configuration</a></li>
+                                    <li><a href="#workflow">Workflow Integration</a></li>
+                                    <li><a href="#techniques">Advanced Techniques</a></li>
+                                    <li><a href="#languages">Language-Specific Tips</a></li>
+                                    <li><a href="#debugging">Debugging & Testing</a></li>
+                                    <li><a href="#security">Security Considerations</a></li>
+                                    <li><a href="#examples">Practical Examples</a></li>
                                     <li><a href="#faq">FAQ</a></li>
                                 </ol>
                             </div>
 
                             <h2 id="overview">Overview</h2>
-                            <p>Creating a professional resume can be daunting, but ChatGPT makes the process easier and more effective. This guide will walk you through using ChatGPT to:</p>
+                            <p>GitHub Copilot revolutionizes development by providing AI-powered code suggestions in real-time. This guide covers professional techniques for:</p>
                             <ul>
-                                <li>Generate compelling content for each resume section</li>
-                                <li>Optimize your resume for Applicant Tracking Systems (ATS)</li>
-                                <li>Tailor your resume for specific job applications</li>
-                                <li>Format your resume professionally</li>
+                                <li>Integrating Copilot seamlessly into your workflow</li>
+                                <li>Writing effective prompts and comments</li>
+                                <li>Maintaining code quality with AI assistance</li>
+                                <li>Advanced debugging and testing techniques</li>
+                                <li>Security best practices</li>
                             </ul>
                             <div class="note">
-                                <p><strong>Note:</strong> While ChatGPT is powerful, always verify the accuracy of information and customize the output to reflect your unique experience.</p>
+                                <p><strong>Note:</strong> Copilot is a powerful tool but not a replacement for understanding the code it generates. Always review suggestions carefully.</p>
                             </div>
 
-                            <h2 id="step1">Step 1: Gather Your Information</h2>
-                            <p>Before using ChatGPT, compile all necessary information:</p>
+                            <h2 id="setup">Setup & Configuration</h2>
+                            <p>Optimize your Copilot installation:</p>
+                            
+                            <h3>IDE Integration</h3>
                             <div class="checklist">
                                 <div class="checklist-item">
                                     <input type="checkbox" id="item1" checked>
-                                    <label for="item1">Work history (company names, job titles, dates)</label>
+                                    <label for="item1">Install the Copilot extension for your IDE</label>
                                 </div>
                                 <div class="checklist-item">
                                     <input type="checkbox" id="item2">
-                                    <label for="item2">Key responsibilities and achievements</label>
+                                    <label for="item2">Configure keyboard shortcuts</label>
                                 </div>
                                 <div class="checklist-item">
                                     <input type="checkbox" id="item3">
-                                    <label for="item3">Education and certifications</label>
+                                    <label for="item3">Set up enterprise policies (if applicable)</label>
                                 </div>
                                 <div class="checklist-item">
                                     <input type="checkbox" id="item4">
-                                    <label for="item4">Skills (technical and soft skills)</label>
-                                </div>
-                                <div class="checklist-item">
-                                    <input type="checkbox" id="item5">
-                                    <label for="item5">Projects or portfolio items</label>
+                                    <label for="item4">Adjust suggestion preferences</label>
                                 </div>
                             </div>
-                            <p>Having this information ready will help you create more accurate and detailed prompts for ChatGPT.</p>
 
-                            <h2 id="step2">Step 2: Choose a Resume Format</h2>
-                            <p>ChatGPT can help you decide on the best resume format for your situation. The three main types are:</p>
+                            <h3>Configuration Settings</h3>
+                            <div class="example">
+                                <p class="example-title">Recommended Settings:</p>
+                                <div class="example-content">
+                                    <p>• Enable inline suggestions<br>
+                                    • Set suggestion delay to 300ms<br>
+                                    • Disable in sensitive projects<br>
+                                    • Configure telemetry preferences<br>
+                                    • Set up code reference tracking</p>
+                                </div>
+                            </div>
+
+                            <h2 id="workflow">Workflow Integration</h2>
+                            <p>Incorporate Copilot into your development process:</p>
                             
                             <div class="format-cards">
                                 <div class="format-card">
-                                    <h3>Chronological</h3>
-                                    <p>Lists work history in reverse chronological order. Best for those with consistent employment in one field.</p>
+                                    <h3>New Feature Development</h3>
+                                    <p>Use Copilot to scaffold new features quickly.</p>
                                     <div class="example">
                                         <p class="example-title">Prompt Example:</p>
                                         <div class="example-content">
-                                            <p>"Generate a chronological resume outline for a software developer with 5 years of experience at two companies."</p>
+                                            <p>"Create a React component for a user profile card with avatar, name, bio, and social links. Use Tailwind CSS for styling."</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="format-card">
-                                    <h3>Functional</h3>
-                                    <p>Focuses on skills rather than work history. Ideal for career changers or employment gaps.</p>
+                                    <h3>Code Refactoring</h3>
+                                    <p>Get suggestions for cleaner implementations.</p>
                                     <div class="example">
                                         <p class="example-title">Prompt Example:</p>
                                         <div class="example-content">
-                                            <p>"Create a functional resume structure highlighting transferable skills for someone moving from teaching to corporate training."</p>
+                                            <p>"Refactor this class component to a functional component with hooks, maintaining all functionality: [paste code]"</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="format-card">
-                                    <h3>Combination</h3>
-                                    <p>Mixes chronological and functional elements. Good for showcasing both skills and experience.</p>
+                                    <h3>Documentation</h3>
+                                    <p>Generate docstrings and comments.</p>
                                     <div class="example">
                                         <p class="example-title">Prompt Example:</p>
                                         <div class="example-content">
-                                            <p>"Suggest a combination resume format for a project manager with 10+ years of diverse experience."</p>
+                                            <p>"Write comprehensive JSDoc documentation for this function: [paste function]"</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <h2 id="step3">Step 3: Generate Initial Content</h2>
-                            <p>With your information and format ready, use ChatGPT to draft each resume section:</p>
+                            <h2 id="techniques">Advanced Techniques</h2>
+                            <p>Professional methods to maximize Copilot's potential:</p>
                             
-                            <h3>Professional Summary</h3>
+                            <h3>Prompt Engineering</h3>
                             <div class="before-after">
                                 <div class="before">
                                     <h4>Basic Prompt</h4>
                                     <div class="example-content">
-                                        <p>"Write a professional summary for a marketing manager resume."</p>
+                                        <p>"Write a sorting function"</p>
                                     </div>
                                 </div>
                                 <div class="after">
                                     <h4>Better Prompt</h4>
                                     <div class="example-content">
-                                        <p>"Write a compelling 3-sentence professional summary for a digital marketing manager with 7 years of experience specializing in SEO and content strategy. Include metrics about campaign performance and team leadership."</p>
+                                        <p>"Implement an optimized quicksort function in Python that handles edge cases, includes type hints, and has O(n log n) time complexity"</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <h3>Work Experience</h3>
-                            <p>Transform basic job descriptions into achievement-oriented bullet points:</p>
+                            <h3>Context Management</h3>
+                            <p>Provide relevant context in comments:</p>
                             <div class="example">
                                 <p class="example-title">Prompt Example:</p>
                                 <div class="example-content">
-                                    <p>"Rewrite these job responsibilities as quantifiable achievements for a sales associate resume: Managed customer inquiries, processed sales transactions, maintained product displays, and met monthly sales targets."</p>
+                                    <p>"/* 
+                                    Database schema: 
+                                    users(id, name, email) 
+                                    posts(id, user_id, content, created_at)
+                                    Create a function to get all posts for a user with their email 
+                                    */"</p>
                                 </div>
                             </div>
 
-                            <h3>Skills Section</h3>
-                            <p>Get suggestions for relevant skills to include:</p>
+                            <h3>Code Review</h3>
+                            <p>Use Copilot to explain complex code:</p>
                             <div class="example">
                                 <p class="example-title">Prompt Example:</p>
                                 <div class="example-content">
-                                    <p>"List 10-15 technical and soft skills that would be valuable for an entry-level data analyst position, categorized appropriately."</p>
+                                    <p>"Explain this regular expression in detail: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/"</p>
                                 </div>
                             </div>
 
-                            <h2 id="step4">Step 4: Refine & Optimize</h2>
-                            <p>Improve your resume content with these ChatGPT techniques:</p>
+                            <h2 id="languages">Language-Specific Tips</h2>
+                            <p>Optimize for different programming languages:</p>
                             
-                            <h3>ATS Optimization</h3>
-                            <p>Many companies use Applicant Tracking Systems to screen resumes. Optimize yours with keywords:</p>
-                            <div class="example">
-                                <p class="example-title">Prompt Example:</p>
-                                <div class="example-content">
-                                    <p>"Analyze this job description for a graphic designer position and extract the most important keywords to include in a resume: [paste job description]"</p>
+                            <div class="format-cards">
+                                <div class="format-card">
+                                    <h3>Python</h3>
+                                    <p>Excellent for data science and automation.</p>
+                                    <div class="example">
+                                        <p class="example-title">Prompt Example:</p>
+                                        <div class="example-content">
+                                            <p>"Create a Pandas function to clean a dataset by handling missing values, removing duplicates, and standardizing formats"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="format-card">
+                                    <h3>JavaScript/TypeScript</h3>
+                                    <p>Great for full-stack development.</p>
+                                    <div class="example">
+                                        <p class="example-title">Prompt Example:</p>
+                                        <div class="example-content">
+                                            <p>"Write a TypeScript interface and service class for API calls with error handling and retry logic"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="format-card">
+                                    <h3>Go</h3>
+                                    <p>Effective for concurrent systems.</p>
+                                    <div class="example">
+                                        <p class="example-title">Prompt Example:</p>
+                                        <div class="example-content">
+                                            <p>"Implement a concurrent worker pool in Go that processes tasks from a channel with graceful shutdown"</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <h3>Tailoring for Specific Jobs</h3>
-                            <p>Customize your resume for each application:</p>
-                            <div class="example">
-                                <p class="example-title">Prompt Example:</p>
-                                <div class="example-content">
-                                    <p>"Adapt my resume experience as a customer service representative to better match this job description for a client success manager role: [paste job description]"</p>
-                                </div>
-                            </div>
-
-                            <h3>Action Verb Enhancement</h3>
-                            <p>Make your bullet points more impactful:</p>
-                            <div class="example">
-                                <p class="example-title">Prompt Example:</p>
-                                <div class="example-content">
-                                    <p>"Rewrite these resume bullet points using stronger action verbs and quantifiable results where possible: [paste your bullet points]"</p>
-                                </div>
-                            </div>
-
-                            <h2 id="step5">Step 5: Formatting & Final Touches</h2>
-                            <p>While ChatGPT can't format documents directly, it can provide guidance:</p>
+                            <h2 id="debugging">Debugging & Testing</h2>
+                            <p>Leverage Copilot for quality assurance:</p>
                             
-                            <h3>Layout Suggestions</h3>
-                            <div class="example">
-                                <p class="example-title">Prompt Example:</p>
-                                <div class="example-content">
-                                    <p>"Suggest an optimal layout for a two-page senior executive resume with extensive experience in the healthcare industry."</p>
-                                </div>
-                            </div>
-
-                            <h3>Font and Style Advice</h3>
-                            <div class="example">
-                                <p class="example-title">Prompt Example:</p>
-                                <div class="example-content">
-                                    <p>"Recommend professional font combinations and sizing for a modern but conservative resume in the financial sector."</p>
-                                </div>
-                            </div>
-
-                            <h3>Final Proofreading</h3>
-                            <p>Have ChatGPT check for errors or inconsistencies:</p>
-                            <div class="example">
-                                <p class="example-title">Prompt Example:</p>
-                                <div class="example-content">
-                                    <p>"Review this resume content for any grammatical errors, inconsistent formatting, or unclear phrasing: [paste resume content]"</p>
-                                </div>
-                            </div>
-
-                            <h2 id="tips">Pro Tips & Best Practices</h2>
                             <div class="tips-grid">
                                 <div class="tip-card">
-                                    <div class="tip-icon">💡</div>
-                                    <h3>Be Specific</h3>
-                                    <p>The more details you provide in your prompts, the better ChatGPT can tailor its responses to your needs.</p>
+                                    <div class="tip-icon">🐛</div>
+                                    <h3>Error Analysis</h3>
+                                    <p>Paste error messages to get explanations and fixes.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <div class="tip-icon">🧪</div>
+                                    <h3>Test Generation</h3>
+                                    <p>Generate unit tests from implementation code.</p>
                                 </div>
                                 <div class="tip-card">
                                     <div class="tip-icon">🔍</div>
-                                    <h3>Iterate</h3>
-                                    <p>Generate multiple versions of each section and combine the best elements from each.</p>
+                                    <h3>Code Review</h3>
+                                    <p>Ask for potential issues in your code.</p>
                                 </div>
                                 <div class="tip-card">
-                                    <div class="tip-icon">🎯</div>
-                                    <h3>Quantify</h3>
-                                    <p>Always include metrics and specific achievements rather than just responsibilities.</p>
-                                </div>
-                                <div class="tip-card">
-                                    <div class="tip-icon">✂️</div>
-                                    <h3>Concise</h3>
-                                    <p>Aim for 1-page if you have less than 10 years of experience, 2 pages maximum.</p>
+                                    <div class="tip-icon">📊</div>
+                                    <h3>Performance</h3>
+                                    <p>Get optimization suggestions.</p>
                                 </div>
                             </div>
 
-                            <h2 id="examples">Example Prompts</h2>
-                            <p>Here are some effective prompts to use with ChatGPT for resume building:</p>
+                            <h2 id="security">Security Considerations</h2>
+                            <p>Important safety practices:</p>
                             
+                            <div class="checklist">
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item5" checked>
+                                    <label for="item5">Never paste sensitive code</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item6">
+                                    <label for="item6">Review all suggestions</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item7">
+                                    <label for="item7">Check for license compliance</label>
+                                </div>
+                                <div class="checklist-item">
+                                    <input type="checkbox" id="item8">
+                                    <label for="item8">Disable in security-critical projects</label>
+                                </div>
+                            </div>
+
+                            <h2 id="examples">Practical Examples</h2>
                             <div class="prompt-examples">
                                 <div class="prompt-card">
                                     <div class="prompt-content">
-                                        <p>"Generate 5-7 achievement-oriented bullet points for a software engineer with experience in Python and cloud technologies, focusing on scalability improvements and team collaboration."</p>
+                                        <p>"Create a secure password hashing function in Node.js using bcrypt with salt rounds and error handling"</p>
                                     </div>
                                     <button class="btn btn-small copy-prompt">Copy Prompt</button>
                                 </div>
                                 <div class="prompt-card">
                                     <div class="prompt-content">
-                                        <p>"Suggest ways to present a 2-year career gap in my resume where I was caring for a family member, while highlighting relevant skills I maintained during that time."</p>
+                                        <p>"Write a Python decorator to cache function results with expiration time and size limit"</p>
                                     </div>
                                     <button class="btn btn-small copy-prompt">Copy Prompt</button>
                                 </div>
                                 <div class="prompt-card">
                                     <div class="prompt-content">
-                                        <p>"Help me combine my experience as a barista and my new certification in digital marketing to create a compelling resume for an entry-level marketing assistant position."</p>
+                                        <p>"Implement a React custom hook for fetching data with loading states, error handling, and abort controller"</p>
                                     </div>
                                     <button class="btn btn-small copy-prompt">Copy Prompt</button>
                                 </div>
@@ -331,62 +341,62 @@
                             <h2 id="video-tutorial">Video Tutorial</h2>
                             <div class="video-embed">
                                 <div class="video-placeholder">
-                                    <img src="../images/guides/resume-video-thumb.jpg" alt="Video Thumbnail" loading="lazy">
+                                    <img src="../images/guides/copilot-video-thumb.jpg" alt="Video Thumbnail" loading="lazy">
                                     <button class="play-button">▶</button>
                                 </div>
-                                <p class="video-caption">Watch our 10-minute tutorial on crafting the perfect resume with ChatGPT</p>
+                                <p class="video-caption">Watch our 20-minute tutorial on advanced GitHub Copilot techniques</p>
                             </div>
 
                             <h2 id="faq">Frequently Asked Questions</h2>
                             <div class="faq-guide">
                                 <div class="faq-item">
                                     <div class="faq-question">
-                                        <h3>Can ChatGPT write my entire resume for me?</h3>
+                                        <h3>Does Copilot memorize or store my private code?</h3>
                                         <span class="faq-toggle">+</span>
                                     </div>
                                     <div class="faq-answer">
-                                        <p>ChatGPT can generate content and provide structure, but you should always personalize the information to accurately reflect your experience. Use it as an assistant rather than having it create your resume from scratch without your input.</p>
+                                        <p>According to GitHub, Copilot doesn't memorize or store your code. Suggestions are generated based on patterns in public code, not your private repositories.</p>
                                     </div>
                                 </div>
                                 <div class="faq-item">
                                     <div class="faq-question">
-                                        <h3>How do I ensure my ChatGPT-generated resume doesn't sound generic?</h3>
+                                        <h3>How accurate are Copilot's suggestions?</h3>
                                         <span class="faq-toggle">+</span>
                                     </div>
                                     <div class="faq-answer">
-                                        <p>Provide specific details about your achievements, use metrics whenever possible, and customize the output to match your voice. Combine multiple generated versions to create something unique.</p>
+                                        <p>Accuracy varies by language and context. JavaScript/Python suggestions are most reliable. Always review code as Copilot can suggest outdated or insecure patterns.</p>
                                     </div>
                                 </div>
                                 <div class="faq-item">
                                     <div class="faq-question">
-                                        <h3>Is it safe to upload my resume to ChatGPT?</h3>
+                                        <h3>Can I use Copilot suggestions in commercial projects?</h3>
                                         <span class="faq-toggle">+</span>
                                     </div>
                                     <div class="faq-answer">
-                                        <p>Avoid including sensitive personal information like your full address, phone number, or any confidential details from previous employers. Use generic placeholders for such information when testing prompts.</p>
+                                        <p>Yes, but be aware of potential open-source license implications. GitHub offers a filter to avoid suggestions matching public code.</p>
                                     </div>
                                 </div>
                                 <div class="faq-item">
                                     <div class="faq-question">
-                                        <h3>How can I make my resume stand out for creative fields?</h3>
+                                        <h3>How does Copilot compare to ChatGPT for coding?</h3>
                                         <span class="faq-toggle">+</span>
                                     </div>
                                     <div class="faq-answer">
-                                        <p>Ask ChatGPT for creative resume formats and section ideas specific to your industry. For example: "Suggest innovative ways to present my portfolio and skills for a graphic design resume that will stand out to creative directors."</p>
+                                        <p>Copilot is specialized for real-time coding with IDE integration, while ChatGPT is better for explanations and conceptual help. Many developers use both.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="guide-cta">
                                 <div class="cta-box">
-                                    <h3>Ready to Create Your Resume?</h3>
-                                    <p>Use these ChatGPT techniques to craft a resume that gets noticed by employers and ATS systems alike.</p>
-                                    <a href="https://chat.openai.com" target="_blank" class="btn btn-primary">Try ChatGPT Now</a>
+                                    <h3>Ready to Boost Your Coding Productivity?</h3>
+                                    <p>Implement these GitHub Copilot techniques to dramatically accelerate your development workflow.</p>
+                                    <a href="https://github.com/features/copilot" target="_blank" class="btn btn-primary">Try Copilot Now</a>
                                 </div>
                             </div>
 
                             <div class="content-update">
-                                <p><strong>Last Updated:</strong> June 15, 2025 | <a href="../contact.html">Suggest an Update</a></p>
+                                <p><strong>Last Updated:</strong> May 28, 2025 | <a href="../contact.html">Suggest an Update</a></p>
                             </div>
                         </div>
 
@@ -396,19 +406,19 @@
                                 <div class="summary-card">
                                     <div class="summary-item">
                                         <span class="summary-label">Difficulty</span>
-                                        <span class="summary-value beginner">Beginner</span>
+                                        <span class="summary-value advanced">Advanced</span>
                                     </div>
                                     <div class="summary-item">
                                         <span class="summary-label">Time Required</span>
-                                        <span class="summary-value">30-60 mins</span>
+                                        <span class="summary-value">1-3 hours</span>
                                     </div>
                                     <div class="summary-item">
                                         <span class="summary-label">Tools Needed</span>
-                                        <span class="summary-value">ChatGPT, Word/Google Docs</span>
+                                        <span class="summary-value">GitHub Copilot, IDE</span>
                                     </div>
                                     <div class="summary-item">
                                         <span class="summary-label">Best For</span>
-                                        <span class="summary-value">Job seekers at all levels</span>
+                                        <span class="summary-value">Developers of all levels</span>
                                     </div>
                                 </div>
                             </div>
@@ -418,15 +428,15 @@
                                 <div class="downloads">
                                     <a href="#" class="download-item">
                                         <span class="download-icon">📝</span>
-                                        <span class="download-text">Resume Template (Word)</span>
-                                    </a>
-                                    <a href="#" class="download-item">
-                                        <span class="download-icon">📋</span>
-                                        <span class="download-text">Checklist PDF</span>
+                                        <span class="download-text">Cheat Sheet</span>
                                     </a>
                                     <a href="#" class="download-item">
                                         <span class="download-icon">🎯</span>
-                                        <span class="download-text">Example Prompts</span>
+                                        <span class="download-text">Prompt Examples</span>
+                                    </a>
+                                    <a href="#" class="download-item">
+                                        <span class="download-icon">⚙️</span>
+                                        <span class="download-text">IDE Configs</span>
                                     </a>
                                 </div>
                             </div>
@@ -440,20 +450,20 @@
                             <div class="sidebar-widget">
                                 <h3>Related Guides</h3>
                                 <div class="related-guides">
-                                    <a href="cover-letter.html" class="guide-item">
-                                        <img src="../images/guides/cover-letter-thumb.jpg" alt="Cover Letter Guide" loading="lazy">
-                                        <h4>Writing Cover Letters with AI</h4>
-                                        <span class="guide-meta">Writing · 12 min read</span>
+                                    <a href="vscode-ai.html" class="guide-item">
+                                        <img src="../images/guides/vscode-thumb.jpg" alt="VSCode Guide" loading="lazy">
+                                        <h4>AI Tools for VSCode</h4>
+                                        <span class="guide-meta">Coding · 18 min read</span>
                                     </a>
-                                    <a href="linkedin-profile.html" class="guide-item">
-                                        <img src="../images/guides/linkedin-thumb.jpg" alt="LinkedIn Guide" loading="lazy">
-                                        <h4>Optimizing Your LinkedIn Profile</h4>
-                                        <span class="guide-meta">Career · 18 min read</span>
+                                    <a href="terminal-ai.html" class="guide-item">
+                                        <img src="../images/guides/terminal-thumb.jpg" alt="Terminal Guide" loading="lazy">
+                                        <h4>AI-Powered Terminal</h4>
+                                        <span class="guide-meta">DevOps · 15 min read</span>
                                     </a>
-                                    <a href="interview-prep.html" class="guide-item">
-                                        <img src="../images/guides/interview-thumb.jpg" alt="Interview Guide" loading="lazy">
-                                        <h4>AI-Powered Interview Preparation</h4>
-                                        <span class="guide-meta">Career · 15 min read</span>
+                                    <a href="code-review.html" class="guide-item">
+                                        <img src="../images/guides/review-thumb.jpg" alt="Code Review Guide" loading="lazy">
+                                        <h4>Automated Code Review</h4>
+                                        <span class="guide-meta">Quality · 20 min read</span>
                                     </a>
                                 </div>
                             </div>
