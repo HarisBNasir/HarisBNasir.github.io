@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact ToolifyAI for tool review suggestions, partnerships, or general inquiries about AI productivity tools.">
+    <meta name="description"
+        content="Contact ToolifyAI for tool review suggestions, partnerships, or general inquiries about AI productivity tools.">
     <title>Contact ToolifyAI - Get in Touch About AI Tools</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dark-mode.css" id="darkModeStyle" disabled>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
@@ -47,85 +49,88 @@
         <section class="contact-hero">
             <div class="container">
                 <h1>Get in Touch</h1>
-                <p class="subtitle">Have questions about AI tools? Want to suggest a tool for review? We'd love to hear from you!</p>
+                <p class="subtitle">Have questions about AI tools? Want to suggest a tool for review? We'd love to hear
+                    from you!</p>
             </div>
         </section>
-<section class="contact-section">
-    <div class="container">
-        <div class="contact-grid">
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form id="contactForm" action="https://usebasin.com/f/b4feb3ffe91e" method="POST">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h2>Send Us a Message</h2>
+                        <form id="contactForm" action="https://usebasin.com/f/b4feb3ffe91e" method="POST">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select a topic</option>
+                                    <option value="tool-suggestion">Tool Suggestion</option>
+                                    <option value="partnership">Partnership Inquiry</option>
+                                    <option value="general-question">General Question</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h2>Other Ways to Connect</h2>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <img src="images/icon-email.svg" alt="Email Icon" loading="lazy">
+                            </div>
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:toolifyai.tech@gmail.com">toolifyai.tech@gmail.com</a></p>
+                            <p>We typically respond within 24 hours</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <img src="images/icon-social.svg" alt="Social Media Icon" loading="lazy">
+                            </div>
+                            <h3>Connect on Social</h3>
+                            <div class="social-links">
+                                <a href="https://twitter.com/toolifyai" target="_blank" aria-label="Twitter"><i
+                                        class="icon-twitter"></i> @toolifyai</a>
+                                <a href="https://linkedin.com/company/toolifyai" target="_blank"
+                                    aria-label="LinkedIn"><i class="icon-linkedin"></i> ToolifyAI</a>
+                                <a href="https://instagram.com/toolifyai" target="_blank" aria-label="Instagram"><i
+                                        class="icon-instagram"></i> @toolifyai</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <img src="images/icon-suggest.svg" alt="Suggestion Icon" loading="lazy">
+                            </div>
+                            <h3>Suggest a Tool</h3>
+                            <p>Know an AI tool we should review? <a href="#tool-suggestion-form">Fill out our quick
+                                    suggestion form</a> or tag us on social media.</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject" required>
-                            <option value="" disabled selected>Select a topic</option>
-                            <option value="tool-suggestion">Tool Suggestion</option>
-                            <option value="partnership">Partnership Inquiry</option>
-                            <option value="general-question">General Question</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <div class="g-recaptcha" data-sitekey="6Ldddp0rAAAAAM7jX3pya4CbLqQq8LRTPuwCqQJU"></div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                </div>
             </div>
+        </section>
 
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <h2>Other Ways to Connect</h2>
 
-                <div class="info-card">
-                    <div class="info-icon">
-                        <img src="images/icon-email.svg" alt="Email Icon" loading="lazy">
-                    </div>
-                    <h3>Email Us</h3>
-                    <p><a href="mailto:toolifyai.tech@gmail.com">toolifyai.tech@gmail.com</a></p>
-                    <p>We typically respond within 24 hours</p>
-                </div>
 
-                <div class="info-card">
-                    <div class="info-icon">
-                        <img src="images/icon-social.svg" alt="Social Media Icon" loading="lazy">
-                    </div>
-                    <h3>Connect on Social</h3>
-                    <div class="social-links">
-                        <a href="https://twitter.com/toolifyai" target="_blank" aria-label="Twitter"><i class="icon-twitter"></i> @toolifyai</a>
-                        <a href="https://linkedin.com/company/toolifyai" target="_blank" aria-label="LinkedIn"><i class="icon-linkedin"></i> ToolifyAI</a>
-                        <a href="https://instagram.com/toolifyai" target="_blank" aria-label="Instagram"><i class="icon-instagram"></i> @toolifyai</a>
-                    </div>
-                </div>
-
-                <div class="info-card">
-                    <div class="info-icon">
-                        <img src="images/icon-suggest.svg" alt="Suggestion Icon" loading="lazy">
-                    </div>
-                    <h3>Suggest a Tool</h3>
-                    <p>Know an AI tool we should review? <a href="#tool-suggestion-form">Fill out our quick suggestion form</a> or tag us on social media.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- reCAPTCHA Script -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
         <section class="faq-contact-section">
             <div class="container">
@@ -133,19 +138,23 @@
                 <div class="faq-grid">
                     <div class="faq-item">
                         <h3>How long does it take to get a response?</h3>
-                        <p>We aim to respond to all inquiries within 24 hours on weekdays. Weekend messages may take until Monday for a response.</p>
+                        <p>We aim to respond to all inquiries within 24 hours on weekdays. Weekend messages may take
+                            until Monday for a response.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Do you accept guest posts or collaborations?</h3>
-                        <p>Yes! We're open to guest posts from AI tool experts. Please include writing samples or portfolio links in your message.</p>
+                        <p>Yes! We're open to guest posts from AI tool experts. Please include writing samples or
+                            portfolio links in your message.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Can I request a specific tool comparison?</h3>
-                        <p>Absolutely. We prioritize comparison requests from our community. Let us know which tools you'd like us to compare.</p>
+                        <p>Absolutely. We prioritize comparison requests from our community. Let us know which tools
+                            you'd like us to compare.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Do you offer consulting services?</h3>
-                        <p>We provide limited consulting for AI tool implementation. Contact us with details about your needs for availability.</p>
+                        <p>We provide limited consulting for AI tool implementation. Contact us with details about your
+                            needs for availability.</p>
                     </div>
                 </div>
             </div>
@@ -156,7 +165,8 @@
                 <div class="newsletter-box">
                     <div class="newsletter-content">
                         <h2>Stay Updated</h2>
-                        <p>Subscribe to our newsletter for weekly AI tool updates, productivity tips, and exclusive content.</p>
+                        <p>Subscribe to our newsletter for weekly AI tool updates, productivity tips, and exclusive
+                            content.</p>
                     </div>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Your email address" required>
