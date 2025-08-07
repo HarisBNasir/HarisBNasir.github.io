@@ -1784,13 +1784,13 @@ ul {
 }
 
 .review-card.featured .review-image {
-    height: auto;
+    height: fit-content;
 }
 
 .review-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     transition: transform 0.5s ease;
 }
 
@@ -1925,16 +1925,17 @@ ul {
     width: 60px;
     height: 60px;
     margin: 0 auto 1rem;
-    background-color: rgba(31, 60, 136, 0.1);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
 }
 
 .category-icon img {
-    width: 30px;
-    height: 30px;
+    width: 110%;      /* slightly larger than container */
+    height: 110%;     /* slightly larger than container */
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    transform: scale(1.1); /* optional: makes image even more snug */
 }
 
 .category-card h3 {
@@ -3870,13 +3871,18 @@ ul {
 }
 
 .tool-image {
-    height: 220px;
+    border-radius: 0%;
     overflow: hidden;
 }
 
 .tool-card.featured .tool-image {
-    height: auto;
+    height: 250px;     /* or larger if you want */
+    width: 250px;
+    aspect-ratio: unset; /* override previous square enforcement if necessary */
+    max-width: none;     /* allow full size */
 }
+
+
 
 .tool-image img {
     width: 100%;
@@ -3884,6 +3890,7 @@ ul {
     object-fit: cover;
     transition: transform 0.5s ease;
 }
+
 
 .tool-card:hover .tool-image img {
     transform: scale(1.05);
@@ -4025,8 +4032,9 @@ ul {
 }
 
 .tip-icon img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
 }
 
 .tip-card h3 {
@@ -4087,24 +4095,32 @@ ul {
 }
 
 .guide-item {
+    display: flex;
+    flex-direction: column; /* Stack image on top of content */
     min-width: 280px;
     background-color: var(--bg-light);
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
+    height: 100%; /* Optional: Ensure consistent height */
 }
+
+.guide-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+
 
 .guide-item:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-md);
 }
 
-.guide-item img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-}
+
 
 .guide-content {
     padding: 1.5rem;
