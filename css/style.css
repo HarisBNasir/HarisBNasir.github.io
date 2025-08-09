@@ -511,8 +511,9 @@ ul {
 /* Footer */
 .footer {
     background-color: var(--primary-color);
+    margin-top: 3rem;
     color: white;
-    padding: 4rem 0 0;
+    padding: 2rem 0 0;
 }
 
 .footer a {
@@ -1099,15 +1100,20 @@ ul {
     gap: 0.5rem;
     color: var(--primary-color);
     transition: var(--transition);
+    text-decoration: none; /* optional */
 }
 
 .info-card .social-links a:hover {
     color: var(--accent-color-1);
 }
 
-.info-card .social-links i {
+.info-card .social-links a i {
+    min-width: 20px;     /* keeps spacing consistent */
+    text-align: center;
     font-size: 1.2rem;
+    flex-shrink: 0;      /* stops icon from shrinking */
 }
+
 
 .faq-contact-section {
     padding: 5rem 0;
@@ -5056,3 +5062,21 @@ ul {
     margin-top: 0;
     color: var(--text-color);
 }
+
+
+
+.info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* match your original image size */
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f4f4f4; /* or your theme color */
+}
+
+.info-icon i {
+    font-size: 28px; /* size of the icon */
+    color: #1F3C88;  /* theme color */
+}
+
