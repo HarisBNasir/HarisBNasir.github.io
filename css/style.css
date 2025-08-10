@@ -1295,8 +1295,9 @@ ul {
     background: linear-gradient(135deg, rgba(31, 60, 136, 0.9), rgba(123, 47, 247, 0.8)), 
                 url('../images/blog-bg.jpg') center/cover no-repeat;
     color: white;
-    padding: 6rem 0;
+    padding: 1rem 0;
     text-align: center;
+    margin-bottom: 1.4rem;
 }
 
 .blog-hero h1 {
@@ -2068,12 +2069,12 @@ ul {
 
 .breadcrumbs {
     font-size: 0.875rem;
-    color: var(--text-light);
+    color: black;
     margin-bottom: 1rem;
 }
 
 .breadcrumbs a {
-    color: var(--text-light);
+    color: black;
 }
 
 .breadcrumbs a:hover {
@@ -2173,6 +2174,11 @@ ul {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
+}
+.hero-ct{
+    /* display: flex; */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .hero-image {
@@ -3355,6 +3361,9 @@ ul {
     font-weight: 500;
     color: var(--text-color);
 }
+.meta-row .date, .meta-row .views {
+    color: black;
+}
 
 .guide-hero .subtitle {
     font-size: 1.25rem;
@@ -3693,6 +3702,7 @@ ul {
     background-color: var(--bg-light);
     border-radius: var(--radius-sm);
     transition: var(--transition);
+    
 }
 
 .guide-item:hover {
@@ -4103,7 +4113,7 @@ ul {
 .guide-item {
     display: flex;
     flex-direction: column; /* Stack image on top of content */
-    min-width: 280px;
+    min-width: 270px;
     background-color: var(--bg-light);
     border-radius: var(--radius-lg);
     overflow: hidden;
@@ -5080,3 +5090,19 @@ ul {
     color: #1F3C88;  /* theme color */
 }
 
+.category-header {
+    display: inline-flex;
+    align-items: start;
+    gap: 20px; /* space between icon and heading */
+}
+
+.category-icon {
+    font-size: 2rem; /* adjust size as needed */
+}
+
+.tool-card.featured {
+    display: block !important;
+}
+/* .tool-card.featured .tool-header {
+    /* display: block !important; */
+/* } */ 
