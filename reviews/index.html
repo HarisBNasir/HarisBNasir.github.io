@@ -65,197 +65,54 @@
             </div>
         </section>
 
-        <section class="reviews-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Featured Reviews</h2>
-                    <div class="filter-controls">
-                        <div class="filter-group">
-                            <label for="category-filter">Category:</label>
-                            <select id="category-filter">
-                                <option value="all">All Categories</option>
-                                <option value="writing">Writing Assistants</option>
-                                <option value="art">AI Art Generators</option>
-                                <option value="productivity">Productivity</option>
-                                <option value="coding">Coding Assistants</option>
-                                <option value="video">Video/Audio Tools</option>
-                            </select>
-                        </div>
-                        <div class="filter-group">
-                            <label for="sort-by">Sort By:</label>
-                            <select id="sort-by">
-                                <option value="newest">Newest First</option>
-                                <option value="rating">Highest Rated</option>
-                                <option value="popular">Most Popular</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
+       <section class="reviews-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured Reviews</h2>
+      <div class="filter-controls">
+        <div class="filter-group">
+          <label for="category-filter">Category:</label>
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="writing">Writing Assistants</option>
+            <option value="art">AI Art Generators</option>
+            <option value="productivity">Productivity</option>
+            <option value="coding">Coding Assistants</option>
+            <option value="video">Video/Audio Tools</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="sort-by">Sort By:</label>
+          <select id="sort-by">
+            <option value="newest">Newest First</option>
+            <option value="rating">Highest Rated</option>
+            <option value="popular">Most Popular</option>
+          </select>
+        </div>
+      </div>
+    </div>
 
-                <div class="reviews-grid">
-                    <article class="review-card featured">
-                        <div class="review-badge">Editor's Choice</div>
-                        <div class="review-image">
-                            <img src="../images/tools/chatgpt.png" alt="ChatGPT" loading="lazy">
-                        </div>
-                        <div class="review-content">
-                            <div class="review-meta">
-                                <span class="category">Writing Assistant</span>
-                                <span class="date">Updated: June 18, 2025</span>
-                            </div>
-                            <h3><a href="chatgpt-review.html">ChatGPT 4.5 Review: Still the King of AI Assistants?</a></h3>
-                            <div class="rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="score">4.8/5</span>
-                            </div>
-                            <p class="excerpt">Our in-depth evaluation of OpenAI's latest ChatGPT version shows why it remains the most versatile AI assistant, despite growing competition.</p>
-                            <div class="review-footer">
-                                <a href="chatgpt-review.html" class="btn btn-small">Read Review</a>
-                                <div class="pricing">
-                                    <span class="price">$20/month</span>
-                                    <span class="free-tier">Free tier available</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+    <div class="reviews-grid" id="reviewsGrid"></div>
+    <div class="no-results" style="display:none; text-align:center; padding:2rem;">
+    <h3>😕 Oops! Nothing to show.</h3>
+    <p>Try adjusting your filters or search.</p>
+</div>
 
-                    <article class="review-card">
-                        <div class="review-image">
-                            <img src="../images/ai-art-comparison.png" alt="MidJourney" loading="lazy">
-                        </div>
-                        <div class="review-content">
-                            <div class="review-meta">
-                                <span class="category">AI Art Generator</span>
-                                <span class="date">Updated: June 10, 2025</span>
-                            </div>
-                            <h3><a href="midjourney-review.html">MidJourney v6 Review: Pushing the Boundaries of AI Art</a></h3>
-                            <div class="rating">
-                                <span class="stars">★★★★☆</span>
-                                <span class="score">4.6/5</span>
-                            </div>
-                            <p class="excerpt">With stunning photorealism and improved coherence, MidJourney continues to lead the AI art generation space.</p>
-                            <div class="review-footer">
-                                <a href="midjourney-review.html" class="btn btn-small">Read Review</a>
-                                <div class="pricing">
-                                    <span class="price">$10-$60/month</span>
-                                    <span class="free-tier">No free tier</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+    <div class="pagination" id="pagination"></div>
+  </div>
+</section>
 
-                    <article class="review-card">
-                        <div class="review-image">
-                            <img src="../images/tools/notion.png" alt="Notion AI" loading="lazy">
-                        </div>
-                        <div class="review-content">
-                            <div class="review-meta">
-                                <span class="category">Productivity</span>
-                                <span class="date">Updated: June 5, 2025</span>
-                            </div>
-                            <h3><a href="notion-review.html">Notion AI Review: Smart Organization Meets AI</a></h3>
-                            <div class="rating">
-                                <span class="stars">★★★★☆</span>
-                                <span class="score">4.3/5</span>
-                            </div>
-                            <p class="excerpt">We test whether Notion's AI features justify the price premium for this already powerful productivity platform.</p>
-                            <div class="review-footer">
-                                <a href="notion-review.html" class="btn btn-small">Read Review</a>
-                                <div class="pricing">
-                                    <span class="price">$8-$15/month</span>
-                                    <span class="free-tier">Limited free plan</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
 
-                    <article class="review-card">
-                        <div class="review-image">
-                            <img src="../images/tools/copilot.png" alt="GitHub Copilot" loading="lazy">
-                        </div>
-                        <div class="review-content">
-                            <div class="review-meta">
-                                <span class="category">Coding Assistant</span>
-                                <span class="date">Updated: May 28, 2025</span>
-                            </div>
-                            <h3><a href="copilot-review.html">GitHub Copilot X Review: The Programmer's AI Pair</a></h3>
-                            <div class="rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="score">4.7/5</span>
-                            </div>
-                            <p class="excerpt">Testing the latest version of GitHub's AI coding assistant that now supports chat and documentation lookup.</p>
-                            <div class="review-footer">
-                                <a href="copilot-review.html" class="btn btn-small">Read Review</a>
-                                <div class="pricing">
-                                    <span class="price">$10/month</span>
-                                    <span class="free-tier">Student discount</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="review-card">
-                        <div class="review-image">
-                            <img src="../images/tools/grammarly.png" alt="Grammarly" loading="lazy">
-                        </div>
-                        <div class="review-content">
-                            <div class="review-meta">
-                                <span class="category">Writing Assistant</span>
-                                <span class="date">Updated: May 20, 2025</span>
-                            </div>
-                            <h3><a href="grammarly-review.html">GrammarlyGO Review: More Than Just Grammar Checking</a></h3>
-                            <div class="rating">
-                                <span class="stars">★★★★☆</span>
-                                <span class="score">4.2/5</span>
-                            </div>
-                            <p class="excerpt">Grammarly's new AI features transform it from proofreader to full writing assistant - but is it worth upgrading?</p>
-                            <div class="review-footer">
-                                <a href="grammarly-review.html" class="btn btn-small">Read Review</a>
-                                <div class="pricing">
-                                    <span class="price">$12-$30/month</span>
-                                    <span class="free-tier">Basic features free</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="review-card">
-                        <div class="review-image">
+<article class="review-card">
+                        <!-- <div class="review-image">
                             <img src="../images/tools/runway.png" alt="Runway ML" loading="lazy">
                         </div>
                         <div class="review-content">
                             <div class="review-meta">
                                 <span class="category">Video/Audio Tools</span>
                                 <span class="date">Updated: May 15, 2025</span>
-                            </div>
-                            <h3><a href="runway-review.html">Runway ML Review: AI Video Editing for Creatives</a></h3>
-                            <div class="rating">
-                                <span class="stars">★★★★☆</span>
-                                <span class="score">4.4/5</span>
-                            </div>
-                            <p class="excerpt">From text-to-video to advanced editing, Runway offers powerful AI tools for video creators - at a price.</p>
-                            <div class="review-footer">
-                                <a href="runway-review.html" class="btn btn-small">Read Review</a>
-                                <div class="pricing">
-                                    <span class="price">$15-$95/month</span>
-                                    <span class="free-tier">Trial available</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="pagination">
-                    <a href="#" class="btn btn-secondary disabled">Previous</a>
-                    <a href="#" class="page-number active">1</a>
-                    <a href="#" class="page-number">2</a>
-                    <a href="#" class="page-number">3</a>
-                    <span class="ellipsis">...</span>
-                    <a href="#" class="page-number">5</a>
-                    <a href="#" class="btn btn-secondary">Next</a>
-                </div>
-            </div>
-        </section>
+                            </div> -->
+                  
 
         <section class="categories-section">
             <div class="container">
@@ -384,6 +241,7 @@
 
     <script src="../js/main.js" defer></script>
     <script src="../js/dark-mode.js" defer></script>
+    <script src="../js/review.js" defer></script>
 </body>
 
 </html>
