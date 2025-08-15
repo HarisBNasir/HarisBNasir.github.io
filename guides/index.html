@@ -67,235 +67,102 @@
             </div>
         </section>
 
-        <section class="guides-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Popular Guides</h2>
-                    <div class="filter-controls">
-                        <div class="filter-group">
-                            <label for="category-filter">Category:</label>
-                            <select id="category-filter">
-                                <option value="all">All Categories</option>
-                                <option value="writing">Writing</option>
-                                <option value="art">AI Art</option>
-                                <option value="productivity">Productivity</option>
-                                <option value="coding">Coding</option>
-                                <option value="business">Business</option>
-                            </select>
-                        </div>
-                        <div class="filter-group">
-                            <label for="sort-by">Sort By:</label>
-                            <select id="sort-by">
-                                <option value="popular">Most Popular</option>
-                                <option value="newest">Newest First</option>
-                                <option value="difficulty">Difficulty</option>
-                            </select>
-                        </div>
-                    </div>
+<section class="guides-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Popular Guides</h2>
+            <div class="filter-controls">
+                <!-- <div class="search-box">
+                    <input type="text" placeholder="Search guides...">
+                </div> -->
+                <div class="filter-group">
+                    <label for="guides-category-filter">Category:</label>
+                    <select id="guides-category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="writing">Writing</option>
+                        <option value="art">AI Art</option>
+                        <option value="productivity">Productivity</option>
+                        <option value="coding">Coding</option>
+                        <option value="business">Business</option>
+                        <option value="education">Education</option>
+                    </select>
                 </div>
-
-                <div class="guides-grid">
-                    <article class="guide-card featured">
-                        <div class="guide-badge">Featured</div>
-                        <div class="guide-image">
-                            <img src="../images/chatgpt-essay.png" alt="ChatGPT Resume Guide" loading="lazy">
-                        </div>
-                        <div class="guide-content">
-                            <div class="guide-meta">
-                                <span class="category">Writing</span>
-                                <span class="level">Beginner</span>
-                                <span class="time">15 min read</span>
-                            </div>
-                            <h3><a href="chatgpt-resume.html">How to Write a Winning Resume with ChatGPT</a></h3>
-                            <p class="excerpt">Step-by-step instructions to craft a professional resume that stands out, using ChatGPT for content, formatting, and optimization tips.</p>
-                            <div class="guide-footer">
-                                <a href="chatgpt-resume.html" class="btn btn-small">Read Guide</a>
-                                <div class="stats">
-                                    <span class="views">24K views</span>
-                                    <span class="date">Updated: June 15, 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="guide-card">
-                        <div class="guide-image">
-                            <img src="../images/guides/midjourney-social.png" alt="MidJourney Social Media Guide" loading="lazy">
-                        </div>
-                        <div class="guide-content">
-                            <div class="guide-meta">
-                                <span class="category">AI Art</span>
-                                <span class="level">Intermediate</span>
-                                <span class="time">22 min read</span>
-                            </div>
-                            <h3><a href="midjourney-social.html">Creating Stunning Social Media Graphics with MidJourney</a></h3>
-                            <p class="excerpt">Learn professional techniques for generating branded visual content that engages your audience and boosts social media performance.</p>
-                            <div class="guide-footer">
-                                <a href="midjourney-social.html" class="btn btn-small">Read Guide</a>
-                                <div class="stats">
-                                    <span class="views">18K views</span>
-                                    <span class="date">Updated: June 10, 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="guide-card">
-                        <div class="guide-image">
-                            <img src="../images/guides/notion-ai.png" alt="Notion AI Guide" loading="lazy">
-                        </div>
-                        <div class="guide-content">
-                            <div class="guide-meta">
-                                <span class="category">Productivity</span>
-                                <span class="level">Beginner</span>
-                                <span class="time">12 min read</span>
-                            </div>
-                            <h3><a href="notion-ai-guide.html">Notion AI: The Ultimate Productivity Setup</a></h3>
-                            <p class="excerpt">Transform your workflow with this complete guide to building an AI-powered productivity system in Notion.</p>
-                            <div class="guide-footer">
-                                <a href="notion-ai-guide.html" class="btn btn-small">Read Guide</a>
-                                <div class="stats">
-                                    <span class="views">15K views</span>
-                                    <span class="date">Updated: June 5, 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="guide-card">
-                        <div class="guide-image">
-                            <img src="../images/guides/copilot-coding.png" alt="GitHub Copilot Guide" loading="lazy">
-                        </div>
-                        <div class="guide-content">
-                            <div class="guide-meta">
-                                <span class="category">Coding</span>
-                                <span class="level">Advanced</span>
-                                <span class="time">30 min read</span>
-                            </div>
-                            <h3><a href="copilot-coding.html">Mastering GitHub Copilot for Faster Development</a></h3>
-                            <p class="excerpt">Professional techniques to integrate AI pair programming into your workflow and dramatically boost coding efficiency.</p>
-                            <div class="guide-footer">
-                                <a href="copilot-coding.html" class="btn btn-small">Read Guide</a>
-                                <div class="stats">
-                                    <span class="views">12K views</span>
-                                    <span class="date">Updated: May 28, 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="guide-card">
-                        <div class="guide-image">
-                            <img src="../images/guides/ai-business.png" alt="AI Business Guide" loading="lazy">
-                        </div>
-                        <div class="guide-content">
-                            <div class="guide-meta">
-                                <span class="category">Business</span>
-                                <span class="level">Intermediate</span>
-                                <span class="time">25 min read</span>
-                            </div>
-                            <h3><a href="ai-business.html">Automating Business Processes with AI Tools</a></h3>
-                            <p class="excerpt">Practical guide to identifying and automating repetitive tasks in your business using AI tools and workflows.</p>
-                            <div class="guide-footer">
-                                <a href="ai-business.html" class="btn btn-small">Read Guide</a>
-                                <div class="stats">
-                                    <span class="views">10K views</span>
-                                    <span class="date">Updated: May 20, 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="guide-card">
-                        <div class="guide-image">
-                            <img src="../images/guides/prompt-engineering.png" alt="Prompt Engineering Guide" loading="lazy">
-                        </div>
-                        <div class="guide-content">
-                            <div class="guide-meta">
-                                <span class="category">Writing</span>
-                                <span class="level">Advanced</span>
-                                <span class="time">35 min read</span>
-                            </div>
-                            <h3><a href="prompt-engineering.html">Advanced Prompt Engineering Techniques</a></h3>
-                            <p class="excerpt">Go beyond basic prompts with these professional strategies for getting consistent, high-quality results from AI systems.</p>
-                            <div class="guide-footer">
-                                <a href="prompt-engineering.html" class="btn btn-small">Read Guide</a>
-                                <div class="stats">
-                                    <span class="views">20K views</span>
-                                    <span class="date">Updated: May 15, 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="pagination">
-                    <a href="#" class="btn btn-secondary disabled">Previous</a>
-                    <a href="#" class="page-number active">1</a>
-                    <a href="#" class="page-number">2</a>
-                    <a href="#" class="page-number">3</a>
-                    <span class="ellipsis">...</span>
-                    <a href="#" class="page-number">5</a>
-                    <a href="#" class="btn btn-secondary">Next</a>
+                <div class="filter-group">
+                    <label for="guides-sort-by">Sort By:</label>
+                    <select id="guides-sort-by">
+                        <option value="popular">Most Popular</option>
+                        <option value="newest">Newest First</option>
+                        <option value="difficulty">Difficulty</option>
+                    </select>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="categories-section">
-            <div class="container">
-                <h2>Browse by Category</h2>
-                <div class="categories-grid">
-                    <a href="category-writing.html" class="category-card">
-                        <div class="category-icon">
-                            <img src="../images/icons/writing.png" alt="Writing Guides" loading="lazy">
-                        </div>
-                        <h3>Writing Guides</h3>
-                        <p>AI-assisted content creation, editing, and enhancement</p>
-                        <span class="count">28 Guides</span>
-                    </a>
-                    <a href="category-art.html" class="category-card">
-                        <div class="category-icon">
-                            <img src="../images/icons/art.png" alt="AI Art Guides" loading="lazy">
-                        </div>
-                        <h3>AI Art Guides</h3>
-                        <p>Creating images, designs, and visual content with AI</p>
-                        <span class="count">15 Guides</span>
-                    </a>
-                    <a href="category-productivity.html" class="category-card">
-                        <div class="category-icon">
-                            <img src="../images/icons/productivity.png" alt="Productivity Guides" loading="lazy">
-                        </div>
-                        <h3>Productivity Guides</h3>
-                        <p>Workflow optimization and task automation with AI</p>
-                        <span class="count">22 Guides</span>
-                    </a>
-                    <a href="category-coding.html" class="category-card">
-                        <div class="category-icon">
-                            <img src="../images/icons/coding.png" alt="Coding Guides" loading="lazy">
-                        </div>
-                        <h3>Coding Guides</h3>
-                        <p>AI-assisted development and programming</p>
-                        <span class="count">18 Guides</span>
-                    </a>
-                    <a href="category-business.html" class="category-card">
-                        <div class="category-icon">
-                            <img src="../images/icons/other.png" alt="Business Guides" loading="lazy">
-                        </div>
-                        <h3>Business Guides</h3>
-                        <p>Applying AI tools to business processes</p>
-                        <span class="count">14 Guides</span>
-                    </a>
-                    <a href="category-students.html" class="category-card">
-                        <div class="category-icon">
-                            <img src="../images/icons/audio.png" alt="Student Guides" loading="lazy">
-                        </div>
-                        <h3>Student Guides</h3>
-                        <p>AI tools for learning and academic success</p>
-                        <span class="count">12 Guides</span>
-                    </a>
+        <div class="guides-grid" id="guidesGrid"></div>
+        <div class="no-results" style="display:none; text-align:center; padding:2rem;">
+            <h3>😕 Oops! Nothing to show.</h3>
+            <p>Try adjusting your filters or search.</p>
+        </div>
+
+        <div class="pagination" id="guidesPagination"></div>
+    </div>
+</section>
+
+<section class="categories-section">
+    <div class="container">
+        <h2>Browse by Category</h2>
+        <div class="categories-grid">
+            <a href="#" class="category-card" onclick="filterGuidesByCategory('writing'); return false;">
+                <div class="category-icon">
+                    <img src="../images/icons/writing.png" alt="Writing Guides" loading="lazy">
                 </div>
-            </div>
-        </section>
+                <h3>Writing Guides</h3>
+                <p>AI-assisted content creation, editing, and enhancement</p>
+                <span class="count">28 Guides</span>
+            </a>
+            <a href="#" class="category-card" onclick="filterGuidesByCategory('art'); return false;">
+                <div class="category-icon">
+                    <img src="../images/icons/art.png" alt="AI Art Guides" loading="lazy">
+                </div>
+                <h3>AI Art Guides</h3>
+                <p>Creating images, designs, and visual content with AI</p>
+                <span class="count">15 Guides</span>
+            </a>
+            <a href="#" class="category-card" onclick="filterGuidesByCategory('productivity'); return false;">
+                <div class="category-icon">
+                    <img src="../images/icons/productivity.png" alt="Productivity Guides" loading="lazy">
+                </div>
+                <h3>Productivity Guides</h3>
+                <p>Workflow optimization and task automation with AI</p>
+                <span class="count">22 Guides</span>
+            </a>
+            <a href="#" class="category-card" onclick="filterGuidesByCategory('coding'); return false;">
+                <div class="category-icon">
+                    <img src="../images/icons/coding.png" alt="Coding Guides" loading="lazy">
+                </div>
+                <h3>Coding Guides</h3>
+                <p>AI-assisted development and programming</p>
+                <span class="count">18 Guides</span>
+            </a>
+            <a href="#" class="category-card" onclick="filterGuidesByCategory('business'); return false;">
+                <div class="category-icon">
+                    <img src="../images/icons/other.png" alt="Business Guides" loading="lazy">
+                </div>
+                <h3>Business Guides</h3>
+                <p>Applying AI tools to business processes</p>
+                <span class="count">14 Guides</span>
+            </a>
+            <a href="#" class="category-card" onclick="filterGuidesByCategory('education'); return false;">
+                <div class="category-icon">
+                    <img src="../images/icons/audio.png" alt="Student Guides" loading="lazy">
+                </div>
+                <h3>Student Guides</h3>
+                <p>AI tools for learning and academic success</p>
+                <span class="count">12 Guides</span>
+            </a>
+        </div>
+    </div>
+</section>
 
         <section class="newsletter-section">
             <div class="container">
@@ -368,6 +235,7 @@
 
     <script src="../js/main.js" defer></script>
     <script src="../js/dark-mode.js" defer></script>
+    <script src="../js/guides.js" defer></script>
 </body>
 
 </html>

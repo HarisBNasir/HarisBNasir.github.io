@@ -21,7 +21,7 @@ const reviews = [
     rating: 4.6,
     stars: "★★★★☆",
     excerpt: "With stunning photorealism and improved coherence, MidJourney continues to lead the AI art generation space.",
-    img: "../images/tools/midjourney.png",
+    img: "../images/ai-art-comparison.png",
     link: "midjourney-review.html",
     price: "$10-$60/month",
     freeTier: "No free tier"
@@ -371,7 +371,17 @@ function renderReviews() {
 }
 
 
-
+// Add this function to your JS file
+function filterByCategory(category) {
+  const categoryFilter = document.getElementById("category-filter");
+  categoryFilter.value = category;
+  applyFilters();
+  
+  // Scroll to the reviews section for better UX
+  document.querySelector('.ad-placeholder').scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+}
 function renderPagination() {
   const pagination = document.getElementById("pagination");
   pagination.innerHTML = "";
@@ -415,6 +425,7 @@ function applyFilters() {
 // ===================
 document.querySelector(".search-box input").addEventListener("input", applyFilters);
 document.getElementById("category-filter").addEventListener("change", applyFilters);
+
 
 // ===================
 // 6. INIT

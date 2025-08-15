@@ -50,371 +50,102 @@
 
     <main>
         <section class="compare-hero">
-            <div class="container">
-                <h1>Compare AI Tools</h1>
-                <p class="subtitle">Side-by-side comparisons to help you find the perfect AI solution for your needs</p>
-                <div class="search-box">
-                    <input type="text" placeholder="Search tools to compare...">
-                    <button class="btn btn-primary">Search</button>
+    <div class="container">
+        <h1>Compare AI Tools</h1>
+        <p class="subtitle">Side-by-side comparisons to help you find the perfect AI solution for your needs</p>
+        <div class="search-box">
+            <!-- JS expects #searchInput -->
+            <input id="searchInput" type="text" placeholder="Search tools to compare...">
+            <button class="btn btn-primary">Search</button>
+        </div>
+    </div>
+</section>
+
+<section class="ad-section">
+    <div class="container">
+        <div class="ad-banner">
+            <div class="ad-placeholder">Advertisement</div>
+        </div>
+    </div>
+</section>
+
+<section class="compare-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Popular Comparisons</h2>
+            <div class="filter-controls">
+<div class="filter-group">
+    <label for="categorySelect">Category:</label>
+    <select id="categorySelect">
+        <option value="all">All</option>
+        <option value="writing">Writing Assistants</option>
+        <option value="chat">Chatbots</option>
+        <option value="image">Image Generators</option>
+        <option value="video">Video Tools</option>
+        <option value="productivity">Productivity</option>
+        <option value="coding">Coding Assistants</option>
+    </select>
+</div>
+</div>
+        </div>
+
+        <!-- Grid container JS will fill -->
+        <div class="comparison-grid"></div>
+
+        <!-- Pagination container JS will fill -->
+        <div class="pagination"></div>
+    </div>
+</section>
+
+<section class="compare-categories">
+    <div class="container">
+        <h2>Browse by Category</h2>
+        <div class="categories-grid">
+            <a href="#" class="category-card category-filter" data-category="writing">
+                <div class="category-icon">
+                    <img src="../images/icons/writing.svg" alt="Writing Assistants" loading="lazy">
                 </div>
-            </div>
-        </section>
-
-        <section class="ad-section">
-            <div class="container">
-                <div class="ad-banner">
-                    <div class="ad-placeholder">Advertisement</div>
+                <h3>Writing Assistants</h3>
+                <p>Compare grammar checkers, content generators, and writing enhancement tools</p>
+            </a>
+            <a href="#" class="category-card category-filter" data-category="chat">
+                <div class="category-icon">
+                    <img src="../images/icons/chatbot.svg" alt="Chatbots" loading="lazy">
                 </div>
-            </div>
-        </section>
-
-        <section class="compare-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Popular Comparisons</h2>
-                    <div class="filter-controls">
-                        <div class="filter-group">
-                            <label for="category-filter">Category:</label>
-                            <select id="category-filter">
-                                <option value="all">All Categories</option>
-                                <option value="writing">Writing Assistants</option>
-                                <option value="chat">Chatbots</option>
-                                <option value="image">Image Generators</option>
-                                <option value="video">Video Tools</option>
-                                <option value="productivity">Productivity</option>
-                                <option value="coding">Coding Assistants</option>
-                            </select>
-                        </div>
-                        <div class="filter-group">
-                            <label for="sort-by">Sort By:</label>
-                            <select id="sort-by">
-                                <option value="popular">Most Popular</option>
-                                <option value="recent">Recently Added</option>
-                                <option value="rating">Highest Rated</option>
-                            </select>
-                        </div>
-                    </div>
+                <h3>Chatbots</h3>
+                <p>Compare conversational AI assistants and large language models</p>
+            </a>
+            <a href="#" class="category-card category-filter" data-category="image">
+                <div class="category-icon">
+                    <img src="../images/icons/image.svg" alt="Image Generators" loading="lazy">
                 </div>
-
-                <div class="comparison-grid">
-                    <article class="comparison-card">
-                        <div class="comparison-header">
-                            <h3>ChatGPT vs Claude AI</h3>
-                            <p class="comparison-meta">Large Language Models Comparison</p>
-                        </div>
-                        <div class="comparison-tools">
-                            <div class="tool-item">
-                                <div class="tool-image">
-                                    <img src="../images/chatgpt-logo.png" alt="ChatGPT" loading="lazy">
-                                </div>
-                                <h4>ChatGPT</h4>
-                                <div class="rating">
-                                    <span class="stars">★★★★★</span>
-                                    <span class="score">4.7/5</span>
-                                </div>
-                                <div class="price">Freemium</div>
-                            </div>
-                            <div class="vs-circle">VS</div>
-                            <div class="tool-item">
-                                <div class="tool-image">
-                                    <img src="../images/claude.png" alt="Claude AI" loading="lazy">
-                                </div>
-                                <h4>Claude AI</h4>
-                                <div class="rating">
-                                    <span class="stars">★★★★☆</span>
-                                    <span class="score">4.5/5</span>
-                                </div>
-                                <div class="price">Freemium</div>
-                            </div>
-                        </div>
-                        <div class="comparison-summary">
-                            <p>Compare the two leading conversational AI assistants for content creation, coding help,
-                                and general knowledge.</p>
-                            <div class="key-differences">
-                                <span class="difference-tag">Context Length</span>
-                                <span class="difference-tag">Creativity</span>
-                                <span class="difference-tag">Safety</span>
-                            </div>
-                        </div>
-                        <a href="chatgpt-vs-claude.html" class="btn btn-primary">View Full Comparison</a>
-                    </article>
-
-                    <article class="comparison-card">
-                        <div class="comparison-header">
-                            <h3>Midjourney vs DALL·E</h3>
-                            <p class="comparison-meta">AI Image Generation Comparison</p>
-                        </div>
-                        <div class="comparison-tools">
-                            <div class="tool-item">
-                                <div class="tool-image">
-                                    <img src="../images/midjourney-icon.png" alt="Midjourney" loading="lazy">
-                                </div>
-                                <h4>Midjourney</h4>
-                                <div class="rating">
-                                    <span class="stars">★★★★★</span>
-                                    <span class="score">4.8/5</span>
-                                </div>
-                                <div class="price">Paid</div>
-                            </div>
-                            <div class="vs-circle">VS</div>
-                            <div class="tool-item">
-                                <div class="tool-image">
-                                    <img src="../images/dalle.png" alt="DALL·E" loading="lazy">
-                                </div>
-                                <h4>DALL·E</h4>
-                                <div class="rating">
-                                    <span class="stars">★★★★☆</span>
-                                    <span class="score">4.5/5</span>
-                                </div>
-                                <div class="price">Free/Paid</div>
-                            </div>
-                        </div>
-                        <div class="comparison-summary">
-                            <p>Detailed comparison of the two leading AI image generation tools for creative
-                                professionals and content creators.</p>
-                            <div class="key-differences">
-                                <span class="difference-tag">Realism</span>
-                                <span class="difference-tag">Text-to-Image Accuracy</span>
-                                <span class="difference-tag">Pricing</span>
-                            </div>
-                        </div>
-                        <a href="midjourney-vs-dalle.html" class="btn btn-primary">View Full Comparison</a>
-                    </article>
-
-
-                    <article class="comparison-card">
-                        <div class="comparison-header">
-                            <h3>Notion AI vs Evernote</h3>
-                            <p class="comparison-meta">Note-taking Apps Comparison</p>
-                        </div>
-                        <div class="comparison-tools">
-                            <div class="tool-item">
-                                <div class="tool-image">
-                                    <img src="../images/notion-icon.png" alt="Notion AI" loading="lazy">
-                                </div>
-                                <h4>Notion AI</h4>
-                                <div class="rating">
-                                    <span class="stars">★★★★☆</span>
-                                    <span class="score">4.6/5</span>
-                                </div>
-                                <div class="price">Freemium</div>
-                            </div>
-                            <div class="vs-circle">VS</div>
-                            <div class="tool-item">
-                                <div class="tool-image">
-                                    <img src="../images/evernote.jpeg" alt="Evernote" loading="lazy">
-                                </div>
-                                <h4>Evernote</h4>
-                                <div class="rating">
-                                    <span class="stars">★★★★☆</span>
-                                    <span class="score">4.2/5</span>
-                                </div>
-                                <div class="price">Freemium</div>
-                            </div>
-                        </div>
-                        <div class="comparison-summary">
-                            <p>Which note-taking app with AI features is better for organization and productivity?</p>
-                            <div class="key-differences">
-                                <span class="difference-tag">AI Features</span>
-                                <span class="difference-tag">Templates</span>
-                                <span class="difference-tag">Collaboration</span>
-                            </div>
-                        </div>
-                        <a href="notion-vs-evernote.html" class="btn btn-primary">View Full Comparison</a>
-                    </article>
-
-                    <article class="comparison-card">
-                        <div class="comparison-header">
-                            <h3>Grammarly vs ProWritingAid</h3>
-                            <p class="comparison-meta">Writing Assistants Comparison</p>
-                        </div>
-                        <div class="comparison-tools">
-                            <div class="tool-item">
-                                <div class="tool-image">
-                                    <img src="../images/grammarly-icon.png" alt="Grammarly" loading="lazy">
-                                </div>
-                                <h4>Grammarly</h4>
-                                <div class="rating">
-                                    <span class="stars">★★★★★</span>
-                                    <span class="score">4.7/5</span>
-                                </div>
-                                <div class="price">Freemium</div>
-                            </div>
-                            <div class="vs-circle">VS</div>
-                            <div class="tool-item">
-                                <div class="tool-image">
-                                    <img src="../images/prowritingaid.png" alt="ProWritingAid" loading="lazy">
-                                </div>
-                                <h4>ProWritingAid</h4>
-                                <div class="rating">
-                                    <span class="stars">★★★★☆</span>
-                                    <span class="score">4.4/5</span>
-                                </div>
-                                <div class="price">Freemium</div>
-                            </div>
-                        </div>
-                        <div class="comparison-summary">
-                            <p>Which AI writing assistant offers better grammar checking and style suggestions?</p>
-                            <div class="key-differences">
-                                <span class="difference-tag">Accuracy</span>
-                                <span class="difference-tag">Integration</span>
-                                <span class="difference-tag">Pricing</span>
-                            </div>
-                        </div>
-                        <a href="grammarly-vs-prowritingaid.html" class="btn btn-primary">View Full Comparison</a>
-                    </article>
-
-                    <article class="comparison-card">
-                        <div class="comparison-header">
-                            <h3>GitHub Copilot vs Cursor</h3>
-                            <p class="comparison-meta">AI Coding Assistants Comparison</p>
-                        </div>
-                        <div class="comparison-tools">
-                            <div class="tool-item">
-                                <div class="tool-image">
-                                    <img src="../images/copilot.png" alt="GitHub Copilot" loading="lazy">
-                                </div>
-                                <h4>GitHub Copilot</h4>
-                                <div class="rating">
-                                    <span class="stars">★★★★★</span>
-                                    <span class="score">4.8/5</span>
-                                </div>
-                                <div class="price">Paid</div>
-                            </div>
-                            <div class="vs-circle">VS</div>
-                            <div class="tool-item">
-                                <div class="tool-image">
-                                    <img src="../images/cursor.jpeg" alt="Cursor AI" loading="lazy">
-                                </div>
-                                <h4>Cursor</h4>
-                                <div class="rating">
-                                    <span class="stars">★★★★☆</span>
-                                    <span class="score">4.6/5</span>
-                                </div>
-                                <div class="price">Freemium</div>
-                            </div>
-                        </div>
-                        <div class="comparison-summary">
-                            <p>Which AI-powered editor enhances productivity and code understanding better?</p>
-                            <div class="key-differences">
-                                <span class="difference-tag">Autocompletion</span>
-                                <span class="difference-tag">Bug Fix Suggestions</span>
-                                <span class="difference-tag">Context Awareness</span>
-                            </div>
-                        </div>
-                        <a href="copilot-vs-cursor.html" class="btn btn-primary">View Full Comparison</a>
-                    </article>
-
-
-                    <article class="comparison-card">
-                        <div class="comparison-header">
-                            <h3>Runway ML vs Pika Labs</h3>
-                            <p class="comparison-meta">AI Video Tools Comparison</p>
-                        </div>
-                        <div class="comparison-tools">
-                            <div class="tool-item">
-                                <div class="tool-image">
-                                    <img src="../images/runway.png" alt="Runway ML" loading="lazy">
-                                </div>
-                                <h4>Runway ML</h4>
-                                <div class="rating">
-                                    <span class="stars">★★★★☆</span>
-                                    <span class="score">4.6/5</span>
-                                </div>
-                                <div class="price">Freemium</div>
-                            </div>
-                            <div class="vs-circle">VS</div>
-                            <div class="tool-item">
-                                <div class="tool-image">
-                                    <img src="../images/pika.png" alt="Pika Labs" loading="lazy">
-                                </div>
-                                <h4>Pika Labs</h4>
-                                <div class="rating">
-                                    <span class="stars">★★★★☆</span>
-                                    <span class="score">4.3/5</span>
-                                </div>
-                                <div class="price">Free</div>
-                            </div>
-                        </div>
-                        <div class="comparison-summary">
-                            <p>Compare the leading AI video generation and editing tools for creators.</p>
-                            <div class="key-differences">
-                                <span class="difference-tag">Video Quality</span>
-                                <span class="difference-tag">Features</span>
-                                <span class="difference-tag">Accessibility</span>
-                            </div>
-                        </div>
-                        <a href="runway-vs-pika.html" class="btn btn-primary">View Full Comparison</a>
-                    </article>
+                <h3>Image Generators</h3>
+                <p>Compare AI art and design tools for different needs and styles</p>
+            </a>
+            <a href="#" class="category-card category-filter" data-category="video">
+                <div class="category-icon">
+                    <img src="../images/icons/video.svg" alt="Video Tools" loading="lazy">
                 </div>
-
-                <div class="pagination">
-                    <a href="#" class="btn btn-secondary disabled">Previous</a>
-                    <a href="#" class="page-number active">1</a>
-                    <a href="#" class="page-number">2</a>
-                    <a href="#" class="page-number">3</a>
-                    <span class="ellipsis">...</span>
-                    <a href="#" class="page-number">5</a>
-                    <a href="#" class="btn btn-secondary">Next</a>
+                <h3>Video Tools</h3>
+                <p>Compare AI video generation, editing, and enhancement tools</p>
+            </a>
+            <a href="#" class="category-card category-filter" data-category="productivity">
+                <div class="category-icon">
+                    <img src="../images/icons/productivity.svg" alt="Productivity" loading="lazy">
                 </div>
-            </div>
-        </section>
-
-        <section class="compare-categories">
-            <div class="container">
-                <h2>Browse by Category</h2>
-                <div class="categories-grid">
-                    <a href="index.html?category=writing" class="category-card">
-                        <div class="category-icon">
-                            <img src="../images/icons/writing.svg" alt="Writing Assistants" loading="lazy">
-                        </div>
-                        <h3>Writing Assistants</h3>
-                        <p>Compare grammar checkers, content generators, and writing enhancement tools</p>
-                        <span class="count">12 Comparisons</span>
-                    </a>
-                    <a href="index.html?category=chat" class="category-card">
-                        <div class="category-icon">
-                            <img src="../images/icons/chatbot.svg" alt="Chatbots" loading="lazy">
-                        </div>
-                        <h3>Chatbots</h3>
-                        <p>Compare conversational AI assistants and large language models</p>
-                        <span class="count">8 Comparisons</span>
-                    </a>
-                    <a href="index.html?category=image" class="category-card">
-                        <div class="category-icon">
-                            <img src="../images/icons/image.svg" alt="Image Generators" loading="lazy">
-                        </div>
-                        <h3>Image Generators</h3>
-                        <p>Compare AI art and design tools for different needs and styles</p>
-                        <span class="count">6 Comparisons</span>
-                    </a>
-                    <a href="index.html?category=video" class="category-card">
-                        <div class="category-icon">
-                            <img src="../images/icons/video.svg" alt="Video Tools" loading="lazy">
-                        </div>
-                        <h3>Video Tools</h3>
-                        <p>Compare AI video generation, editing, and enhancement tools</p>
-                        <span class="count">5 Comparisons</span>
-                    </a>
-                    <a href="index.html?category=productivity" class="category-card">
-                        <div class="category-icon">
-                            <img src="../images/icons/productivity.svg" alt="Productivity" loading="lazy">
-                        </div>
-                        <h3>Productivity</h3>
-                        <p>Compare AI-powered tools for task management and workflow automation</p>
-                        <span class="count">10 Comparisons</span>
-                    </a>
-                    <a href="index.html?category=coding" class="category-card">
-                        <div class="category-icon">
-                            <img src="../images/icons/coding.svg" alt="Coding Assistants" loading="lazy">
-                        </div>
-                        <h3>Coding Assistants</h3>
-                        <p>Compare AI pair programmers and code generation tools</p>
-                        <span class="count">7 Comparisons</span>
-                    </a>
+                <h3>Productivity</h3>
+                <p>Compare AI-powered tools for task management and workflow automation</p>
+            </a>
+            <a href="#" class="category-card category-filter" data-category="coding">
+                <div class="category-icon">
+                    <img src="../images/icons/coding.svg" alt="Coding Assistants" loading="lazy">
                 </div>
-            </div>
-        </section>
+                <h3>Coding Assistants</h3>
+                <p>Compare AI pair programmers and code generation tools</p>
+            </a>
+        </div>
+    </div>
+</section>
 
         <section class="newsletter-section">
             <div class="container">
